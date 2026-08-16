@@ -5,9 +5,9 @@ export const site = {
   description:
     'Pet puja — the oldest ritual there is. We keep it properly: spices ground at dawn, dal left on the coals all night, breads pulled from the clay oven only once you have asked for them.',
   url: 'https://petpuja.com',
-  phone: '+91 98765 43210',
-  phoneHref: 'tel:+919876543210',
-  whatsappHref: 'https://wa.me/919876543210',
+  phone: '+91 86503 68283',
+  phoneHref: 'tel:+918650368283',
+  whatsappHref: 'https://wa.me/918650368283',
   email: 'hello@petpuja.com',
   address: {
     street: '123 Main Street',
