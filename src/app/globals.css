@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply bg-masala-950 font-sans text-cream-300 antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-marigold-400 text-masala-950;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-marigold-400 ring-offset-2 ring-offset-masala-950;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-12;
+  }
+
+  /* Section label: Devanagari word, rule, then the English kicker. */
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-[0.68rem] font-medium uppercase tracking-brand text-marigold-400;
+  }
+
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-8 bg-marigold-400/50;
+  }
+
+  .rule {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-marigold-400/25 to-transparent;
+  }
+
+  .btn {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-[0.72rem] font-semibold uppercase tracking-widest transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply btn bg-marigold-400 text-masala-950 hover:bg-marigold-300 hover:shadow-[0_14px_44px_-12px_rgba(233,161,59,0.8)];
+  }
+
+  .btn-ghost {
+    @apply btn border border-marigold-400/35 text-cream-100 hover:border-marigold-400 hover:bg-marigold-400/10;
+  }
+
+  .surface {
+    @apply rounded-3xl border border-white/[0.06] bg-masala-800/70 backdrop-blur-sm;
+  }
+
+  /* Devanagari display lockup — used for the wordmark and section marks. */
+  .devanagari {
+    @apply font-hindi leading-none;
+    font-feature-settings: 'kern' 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .grain::after {
+    content: '';
+    @apply pointer-events-none absolute inset-0 bg-grain opacity-[0.14] mix-blend-overlay;
+  }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*
+ * Printing is only ever meant to produce the QR table card. The card is
+ * portalled to <body> so a single `display: none` on its siblings collapses the
+ * whole page to one sheet — hiding by visibility instead would keep every
+ * section's height and print a dozen blank pages before the card.
+ */
+.qr-print-portal {
+  display: none;
+}
+
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+  }
+
+  body > *:not(.qr-print-portal) {
+    display: none !important;
+  }
+
+  .qr-print-portal {
+    display: block !important;
+  }
+
+  .qr-print-portal .qr-print-card {
+    width: 118mm !important;
+    max-width: 118mm !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
