@@ -15,8 +15,8 @@ export default function Hero() {
           sizes="100vw"
           className="animate-ken-burns object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-forest-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(212,181,99,0.20),transparent_62%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-wine-950" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(217,184,106,0.20),transparent_62%)]" />
       </div>
 
       {/* Slow-turning rangoli rings behind the wordmark. */}
@@ -59,7 +59,7 @@ export default function Hero() {
 
         <div className="mt-20 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.05] lg:grid-cols-4">
           {accolades.map((a) => (
-            <div key={a.label} className="bg-forest-950/60 px-6 py-7 backdrop-blur-sm">
+            <div key={a.label} className="bg-wine-950/60 px-6 py-7 backdrop-blur-sm">
               <div className="font-display text-4xl font-light text-gold-300">{a.value}</div>
               <div className="mt-2 text-[0.68rem] uppercase tracking-widest text-cream-400">
                 {a.label}

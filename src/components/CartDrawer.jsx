@@ -28,7 +28,7 @@ function validate(values, mode) {
 }
 
 const inputClass =
-  'w-full rounded-xl border border-white/10 bg-forest-950/60 px-4 py-3 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-gold-400 focus:outline-none';
+  'w-full rounded-xl border border-white/10 bg-wine-950/60 px-4 py-3 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-gold-400 focus:outline-none';
 
 export default function CartDrawer() {
   const { items, count, open, closeCart, setQty, remove, clear, table } = useCart();
@@ -92,7 +92,7 @@ export default function CartDrawer() {
 
   return (
     <div
-      className="fixed inset-0 z-[70] flex justify-end bg-forest-950/80 backdrop-blur-sm"
+      className="fixed inset-0 z-[70] flex justify-end bg-wine-950/80 backdrop-blur-sm"
       onClick={closeCart}
     >
       <aside
@@ -100,7 +100,7 @@ export default function CartDrawer() {
         aria-modal="true"
         aria-label="Your order"
         onClick={(e) => e.stopPropagation()}
-        className="flex h-full w-full max-w-lg flex-col border-l border-white/[0.08] bg-forest-900 shadow-2xl"
+        className="flex h-full w-full max-w-lg flex-col border-l border-white/[0.08] bg-wine-900 shadow-2xl"
       >
         {/* Head */}
         <header className="flex items-center justify-between border-b border-white/[0.07] px-6 py-5">
@@ -169,7 +169,7 @@ export default function CartDrawer() {
                 {items.map((line) => (
                   <li
                     key={line.key}
-                    className="flex items-center gap-4 rounded-2xl border border-white/[0.06] bg-forest-950/50 p-3"
+                    className="flex items-center gap-4 rounded-2xl border border-white/[0.06] bg-wine-950/50 p-3"
                   >
                     <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl">
                       <Image
@@ -282,7 +282,7 @@ export default function CartDrawer() {
                         aria-pressed={on}
                         className={`rounded-xl border px-3 py-3 text-center transition-all duration-300 ${
                           on
-                            ? 'border-gold-400 bg-gold-400 text-forest-950'
+                            ? 'border-gold-400 bg-gold-400 text-wine-950'
                             : 'border-white/10 text-cream-300 hover:border-gold-400/50'
                         }`}
                       >
@@ -291,7 +291,7 @@ export default function CartDrawer() {
                         </span>
                         <span
                           className={`devanagari mt-1 block text-[0.7rem] ${
-                            on ? 'text-forest-900/70' : 'text-gold-400/70'
+                            on ? 'text-wine-900/70' : 'text-gold-400/70'
                           }`}
                         >
                           {m.hi}

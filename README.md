@@ -42,8 +42,8 @@ opening hours and contact details are plain data — no component edits required
 
 | | |
 |---|---|
-| **Ground** | `forest` — deep green-blacks, bay leaf and cardamom. Never grey. |
-| **Primary** | `gold` — antique brass thali, not neon. |
+| **Ground** | `wine` — deep burgundy-blacks, the lacquer of a haveli door. |
+| **Primary** | `gold` — old temple leaf, not neon. |
 | **Accent** | `vermilion` for heat and emphasis; `pista` green for veg marks and the open-now chip. |
 | **Display** | Fraunces |
 | **Body** | Inter |

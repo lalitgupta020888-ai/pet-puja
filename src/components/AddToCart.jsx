@@ -21,7 +21,7 @@ export default function AddToCart({ item, variant = 'compact', label = 'Add' }) 
         className={
           full
             ? 'btn-primary w-full'
-            : 'inline-flex items-center gap-1.5 rounded-full border border-gold-400/45 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-widest text-gold-300 transition-all duration-300 hover:border-gold-400 hover:bg-gold-400 hover:text-forest-950'
+            : 'inline-flex items-center gap-1.5 rounded-full border border-gold-400/45 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-widest text-gold-300 transition-all duration-300 hover:border-gold-400 hover:bg-gold-400 hover:text-wine-950'
         }
       >
         <span aria-hidden className="text-sm leading-none">
@@ -36,7 +36,7 @@ export default function AddToCart({ item, variant = 'compact', label = 'Add' }) 
 
   return (
     <div
-      className={`inline-flex items-center justify-between gap-1 rounded-full bg-gold-400 text-forest-950 ${
+      className={`inline-flex items-center justify-between gap-1 rounded-full bg-gold-400 text-wine-950 ${
         full ? 'w-full px-3 py-2' : 'px-1.5 py-1.5'
       }`}
     >
@@ -44,7 +44,7 @@ export default function AddToCart({ item, variant = 'compact', label = 'Add' }) 
         type="button"
         onClick={() => setQty(key, qty - 1)}
         aria-label={qty === 1 ? `Remove ${item.name} from order` : `One less ${item.name}`}
-        className="flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none transition-colors hover:bg-forest-950/15"
+        className="flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none transition-colors hover:bg-wine-950/15"
       >
         −
       </button>
@@ -58,7 +58,7 @@ export default function AddToCart({ item, variant = 'compact', label = 'Add' }) 
         type="button"
         onClick={() => setQty(key, qty + 1)}
         aria-label={`One more ${item.name}`}
-        className="flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none transition-colors hover:bg-forest-950/15"
+        className="flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none transition-colors hover:bg-wine-950/15"
       >
         +
       </button>

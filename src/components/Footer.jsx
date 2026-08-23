@@ -3,7 +3,7 @@ import Wordmark from './Wordmark';
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-white/[0.07] bg-forest-950 pt-20">
+    <footer className="relative overflow-hidden border-t border-white/[0.07] bg-wine-950 pt-20">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-400/40 to-transparent" />
 
       <div className="shell">

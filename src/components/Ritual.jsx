@@ -17,7 +17,7 @@ export default function Ritual() {
           {ritual.map((step, i) => (
             <div
               key={step.title}
-              className="reveal group relative bg-forest-950 px-7 py-10 transition-colors duration-500 hover:bg-forest-900"
+              className="reveal group relative bg-wine-950 px-7 py-10 transition-colors duration-500 hover:bg-wine-900"
               style={{ '--reveal-delay': `${i * 90}ms` }}
             >
               <span className="font-display text-sm text-gold-400/50">

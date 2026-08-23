@@ -29,7 +29,7 @@ const TONES = {
   },
   // On the cream paper of the printed card.
   print: {
-    name: 'text-forest-900',
+    name: 'text-wine-900',
     sub: 'text-gold-600',
     flank: 'via-gold-500/60',
     trail: 'from-gold-500/60',

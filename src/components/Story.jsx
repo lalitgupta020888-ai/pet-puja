@@ -5,7 +5,7 @@ import SectionHeading from './SectionHeading';
 
 export default function Story() {
   return (
-    <section id="story" className="relative scroll-mt-24 border-y border-white/[0.06] bg-forest-900/40 py-28 lg:py-40">
+    <section id="story" className="relative scroll-mt-24 border-y border-white/[0.06] bg-wine-900/40 py-28 lg:py-40">
       <div className="shell">
         <div className="grid items-start gap-16 lg:grid-cols-[1fr_1.1fr] lg:gap-24">
           {/* Stacked photographs */}
@@ -18,7 +18,7 @@ export default function Story() {
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-forest-950/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-wine-950/60 to-transparent" />
             </div>
 
             <div className="absolute -bottom-10 -right-6 hidden aspect-square w-48 overflow-hidden rounded-2xl border border-gold-400/25 shadow-2xl sm:block lg:-right-12 lg:w-60">

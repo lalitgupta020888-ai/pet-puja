@@ -9,16 +9,16 @@
   }
 
   body {
-    @apply bg-forest-950 font-sans text-cream-300 antialiased;
+    @apply bg-wine-950 font-sans text-cream-300 antialiased;
     text-rendering: optimizeLegibility;
   }
 
   ::selection {
-    @apply bg-gold-400 text-forest-950;
+    @apply bg-gold-400 text-wine-950;
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-gold-400 ring-offset-2 ring-offset-forest-950;
+    @apply outline-none ring-2 ring-gold-400 ring-offset-2 ring-offset-wine-950;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -59,7 +59,7 @@
   }
 
   .btn-primary {
-    @apply btn bg-gold-400 text-forest-950 hover:bg-gold-300 hover:shadow-[0_14px_44px_-12px_rgba(212,181,99,0.8)];
+    @apply btn bg-gold-400 text-wine-950 hover:bg-gold-300 hover:shadow-[0_14px_44px_-12px_rgba(217,184,106,0.8)];
   }
 
   .btn-ghost {
@@ -67,7 +67,7 @@
   }
 
   .surface {
-    @apply rounded-3xl border border-white/[0.06] bg-forest-800/70 backdrop-blur-sm;
+    @apply rounded-3xl border border-white/[0.06] bg-wine-800/70 backdrop-blur-sm;
   }
 
   /* Devanagari display lockup — used for the wordmark and section marks. */

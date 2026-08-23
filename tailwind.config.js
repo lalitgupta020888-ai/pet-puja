@@ -4,45 +4,47 @@ const config = {
   theme: {
     extend: {
       colors: {
-        // Deep green-blacks — bay leaf and cardamom, never grey. The ground
-        // everything sits on, and a quiet nod to a kitchen that is all veg.
-        forest: {
-          950: '#06120E',
-          900: '#0A1B14',
-          800: '#102A20',
-          700: '#17392B',
-          600: '#204A38',
-          500: '#2C5F49',
+        // Wine-blacks — deep burgundy, the lacquer of a haveli door. The ground
+        // everything sits on.
+        wine: {
+          950: '#150609',
+          900: '#1D080C',
+          800: '#2A0C13',
+          700: '#3A1019',
+          600: '#4C1620',
+          500: '#631E2A',
         },
-        // Antique gold — brass thali, not neon. Primary accent.
+        // Old gold — worn temple leaf, not neon. Primary accent.
         gold: {
-          100: '#FCF6E4',
-          200: '#F3E5B8',
-          300: '#E5CE8A',
-          400: '#D4B563',
-          500: '#B8973F',
-          600: '#8E7128',
+          100: '#FDF6E3',
+          200: '#F6E3B4',
+          300: '#E8CE8E',
+          400: '#D9B86A',
+          500: '#BE9B49',
+          600: '#A88338',
         },
-        // Vermilion — tilak red. Used for heat and emphasis, never for large areas.
+        // Vermilion — heat pips and form errors. Pushed towards coral because a
+        // true red would sink into the burgundy ground and stop reading as a
+        // warning.
         vermilion: {
-          300: '#F3A183',
-          400: '#E4724A',
-          500: '#C4552F',
-          600: '#9A401F',
+          300: '#FFB08A',
+          400: '#FF8A5B',
+          500: '#E0663A',
+          600: '#B84B26',
         },
-        // Pista — the veg mark and pistachio garnish. Kept bright so it still
-        // reads as a distinct green against the forest ground.
+        // Pista — the veg mark and pistachio garnish. The one cool note, and it
+        // carries plenty of contrast against the wine.
         pista: {
-          400: '#B6D95F',
-          500: '#94BC42',
+          400: '#A8D65C',
+          500: '#86B93F',
         },
         // Ivory — warm white for type on the dark ground and for printed paper.
         cream: {
-          50: '#FAF8F1',
-          100: '#F4F1E6',
-          200: '#E7E2D2',
-          300: '#CFC9B6',
-          400: '#9E9884',
+          50: '#FBF4EC',
+          100: '#F6EDE3',
+          200: '#E9DCCF',
+          300: '#D3BFB6',
+          400: '#A08A82',
         },
       },
       fontFamily: {
@@ -61,7 +63,7 @@ const config = {
           "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E\")",
         // Faint concentric rings — a rangoli/thali echo behind key sections.
         rings:
-          "radial-gradient(circle at 50% 50%, transparent 0 28%, rgba(212,181,99,0.07) 28% 28.4%, transparent 28.4% 44%, rgba(212,181,99,0.05) 44% 44.3%, transparent 44.3%)",
+          "radial-gradient(circle at 50% 50%, transparent 0 28%, rgba(217,184,106,0.07) 28% 28.4%, transparent 28.4% 44%, rgba(217,184,106,0.05) 44% 44.3%, transparent 44.3%)",
       },
       animation: {
         'ken-burns': 'kenBurns 26s ease-in-out infinite alternate',

@@ -68,7 +68,7 @@ export default function ScanToOrder() {
 
   return (
     <section id="scan" className="relative scroll-mt-24 overflow-hidden py-28 lg:py-40">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(212,181,99,0.12),transparent_58%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(217,184,106,0.12),transparent_58%)]" />
       <div className="pointer-events-none absolute inset-0 bg-rings opacity-70" />
 
       <div className="shell relative grid items-start gap-14 lg:grid-cols-[1fr_28rem] lg:gap-20">
@@ -129,7 +129,7 @@ export default function ScanToOrder() {
                   inputMode="numeric"
                   placeholder="e.g. 7"
                   aria-describedby="table-help"
-                  className="w-full rounded-xl border border-white/10 bg-forest-950/60 px-4 py-3 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-gold-400 focus:outline-none"
+                  className="w-full rounded-xl border border-white/10 bg-wine-950/60 px-4 py-3 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-gold-400 focus:outline-none"
                 />
                 {table && (
                   <button
@@ -164,7 +164,7 @@ export default function ScanToOrder() {
             <button
               type="button"
               onClick={copy}
-              className="mt-4 flex w-full items-center justify-between gap-3 rounded-xl border border-white/[0.07] bg-forest-950/50 px-4 py-3 text-left transition-colors hover:border-gold-400/40"
+              className="mt-4 flex w-full items-center justify-between gap-3 rounded-xl border border-white/[0.07] bg-wine-950/50 px-4 py-3 text-left transition-colors hover:border-gold-400/40"
             >
               <span className="min-w-0 truncate font-mono text-xs text-cream-300/80">{url}</span>
               <span className="shrink-0 text-[0.6rem] uppercase tracking-widest text-gold-300">

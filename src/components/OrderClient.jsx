@@ -23,7 +23,7 @@ function normalise(s) {
 
 function ThaliCard({ thali }) {
   return (
-    <article className="group flex w-[19rem] shrink-0 snap-start flex-col overflow-hidden rounded-3xl border border-white/[0.07] bg-forest-800/60">
+    <article className="group flex w-[19rem] shrink-0 snap-start flex-col overflow-hidden rounded-3xl border border-white/[0.07] bg-wine-800/60">
       <div className="relative h-40 overflow-hidden">
         <Image
           src={img(thali.photo, { w: 640, h: 360, q: 70 })}
@@ -32,9 +32,9 @@ function ThaliCard({ thali }) {
           sizes="304px"
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/25 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-wine-950 via-wine-950/25 to-transparent" />
         <p className="devanagari absolute bottom-3 left-4 text-lg text-gold-200">{thali.hi}</p>
-        <span className="absolute right-3 top-3 rounded-full bg-forest-950/75 px-3 py-1 text-[0.55rem] uppercase tracking-widest text-gold-300 backdrop-blur">
+        <span className="absolute right-3 top-3 rounded-full bg-wine-950/75 px-3 py-1 text-[0.55rem] uppercase tracking-widest text-gold-300 backdrop-blur">
           Set of {thali.items.length}
         </span>
       </div>
@@ -77,7 +77,7 @@ function DishCard({ item }) {
   return (
     // min-w-0: without it the grid track stretches to the card's min-content
     // width and the whole page gains a horizontal scroll on narrow phones.
-    <article className="group flex min-w-0 gap-4 rounded-2xl border border-white/[0.06] bg-forest-900/50 p-3 transition-colors duration-300 hover:border-gold-400/25 sm:flex-col sm:gap-0 sm:p-0">
+    <article className="group flex min-w-0 gap-4 rounded-2xl border border-white/[0.06] bg-wine-900/50 p-3 transition-colors duration-300 hover:border-gold-400/25 sm:flex-col sm:gap-0 sm:p-0">
       <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl sm:h-44 sm:w-full sm:rounded-b-none sm:rounded-t-2xl">
         <Image
           src={img(item.photo, { w: 560, h: 420, q: 68 })}
@@ -87,7 +87,7 @@ function DishCard({ item }) {
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
         {item.signature && (
-          <span className="absolute left-2 top-2 rounded-full bg-forest-950/75 px-2.5 py-1 text-[0.5rem] uppercase tracking-widest text-gold-300 backdrop-blur sm:left-3 sm:top-3">
+          <span className="absolute left-2 top-2 rounded-full bg-wine-950/75 px-2.5 py-1 text-[0.5rem] uppercase tracking-widest text-gold-300 backdrop-blur sm:left-3 sm:top-3">
             Signature
           </span>
         )}
@@ -165,7 +165,7 @@ export default function OrderClient() {
   return (
     <div className="min-h-screen pb-32">
       {/* ---------------------------------------------------------- header */}
-      <header className="sticky top-0 z-40 border-b border-white/[0.07] bg-forest-950/90 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-white/[0.07] bg-wine-950/90 backdrop-blur-xl">
         <div className="shell flex h-16 items-center justify-between gap-4">
           <a href="/" className="group flex items-center gap-3">
             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gold-400/40 text-gold-300 transition-colors group-hover:bg-gold-400/10">
@@ -192,7 +192,7 @@ export default function OrderClient() {
 
       {/* ------------------------------------------------------------ hero */}
       <section className="relative overflow-hidden border-b border-white/[0.05] py-12 sm:py-16">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(212,181,99,0.14),transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(217,184,106,0.14),transparent_60%)]" />
 
         <div className="shell relative">
           <p className="devanagari text-2xl text-gold-300/85">पूरा मेन्यू</p>
@@ -218,14 +218,14 @@ export default function OrderClient() {
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search dishes — paneer, biryani, naan…"
               aria-label="Search the menu"
-              className="w-full rounded-full border border-white/10 bg-forest-900/70 py-3.5 pl-10 pr-4 text-cream-100 placeholder:text-cream-400/50 transition-colors focus:border-gold-400 focus:outline-none"
+              className="w-full rounded-full border border-white/10 bg-wine-900/70 py-3.5 pl-10 pr-4 text-cream-100 placeholder:text-cream-400/50 transition-colors focus:border-gold-400 focus:outline-none"
             />
           </div>
         </div>
       </section>
 
       {/* ---------------------------------------------------------- filters */}
-      <div className="sticky top-16 z-30 border-b border-white/[0.05] bg-forest-950/90 py-3 backdrop-blur-xl">
+      <div className="sticky top-16 z-30 border-b border-white/[0.05] bg-wine-950/90 py-3 backdrop-blur-xl">
         <div className="shell flex items-center gap-3">
           <div className="no-scrollbar -mx-1 flex min-w-0 flex-1 gap-2 overflow-x-auto px-1">
             {categories.map((cat) => {
@@ -238,7 +238,7 @@ export default function OrderClient() {
                   aria-pressed={on}
                   className={`shrink-0 rounded-full border px-4 py-2 text-[0.65rem] uppercase tracking-widest transition-all duration-300 ${
                     on
-                      ? 'border-gold-400 bg-gold-400 text-forest-950'
+                      ? 'border-gold-400 bg-gold-400 text-wine-950'
                       : 'border-white/10 text-cream-300 hover:border-gold-400/50 hover:text-gold-200'
                   }`}
                 >

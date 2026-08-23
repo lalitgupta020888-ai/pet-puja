@@ -48,7 +48,7 @@ function Field({ label, name, error, touched, children }) {
 }
 
 const inputClass =
-  'w-full rounded-xl border border-white/10 bg-forest-950/60 px-4 py-3.5 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-gold-400 focus:outline-none';
+  'w-full rounded-xl border border-white/10 bg-wine-950/60 px-4 py-3.5 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-gold-400 focus:outline-none';
 
 export default function Reserve() {
   const [values, setValues] = useState(EMPTY);

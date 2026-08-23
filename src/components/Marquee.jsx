@@ -7,7 +7,7 @@ export default function Marquee() {
   const run = [...marqueeWords, ...marqueeWords];
 
   return (
-    <div className="border-y border-white/[0.06] bg-forest-900/60 py-6">
+    <div className="border-y border-white/[0.06] bg-wine-900/60 py-6">
       <div className="mask-fade-x overflow-hidden">
         <div className="flex w-max animate-marquee items-center gap-10 whitespace-nowrap">
           {run.map((word, i) => (

@@ -17,7 +17,7 @@ export default function Testimonials() {
   return (
     <section
       id="guests"
-      className="relative scroll-mt-24 border-y border-white/[0.06] bg-forest-900/40 py-28 lg:py-40"
+      className="relative scroll-mt-24 border-y border-white/[0.06] bg-wine-900/40 py-28 lg:py-40"
     >
       <div className="shell">
         <SectionHeading hi="मेहमान" eyebrow="Our Guests" title="In their" accent="own words" align="center" />

@@ -31,7 +31,7 @@ export default function Signatures() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/35 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-wine-950 via-wine-950/35 to-transparent" />
               </div>
 
               <div className="absolute inset-x-0 bottom-0 p-6">
@@ -63,7 +63,7 @@ export default function Signatures() {
                 </div>
               </div>
 
-              <span className="absolute left-5 top-5 rounded-full border border-gold-400/40 bg-forest-950/60 px-3 py-1 text-[0.6rem] uppercase tracking-widest text-gold-300 backdrop-blur">
+              <span className="absolute left-5 top-5 rounded-full border border-gold-400/40 bg-wine-950/60 px-3 py-1 text-[0.6rem] uppercase tracking-widest text-gold-300 backdrop-blur">
                 Signature
               </span>
             </article>

@@ -12,11 +12,11 @@ import { site } from '@/data/site';
 const W = 1000;
 const H = 1420;
 
-const INK = '#102A20';
-const GOLD = '#8E7128';
-const GOLD_SOFT = 'rgba(142,113,40,0.28)';
-const MUTED = '#5A5341';
-const PAPER = '#FAF8F1';
+const INK = '#2A0C13';
+const GOLD = '#A88338';
+const GOLD_SOFT = 'rgba(168,131,56,0.28)';
+const MUTED = '#6B5257';
+const PAPER = '#FBF4EC';
 
 /** Pull the real webfont families off the document so the PNG matches the page. */
 function fontStacks() {
@@ -149,8 +149,8 @@ export function renderCardCanvas({ url, table = '', scale = 2 }) {
 
   // Warm bloom behind the code.
   const bloom = ctx.createRadialGradient(cx, 520, 40, cx, 520, 620);
-  bloom.addColorStop(0, 'rgba(212,181,99,0.20)');
-  bloom.addColorStop(1, 'rgba(212,181,99,0)');
+  bloom.addColorStop(0, 'rgba(217,184,106,0.20)');
+  bloom.addColorStop(1, 'rgba(217,184,106,0)');
   ctx.fillStyle = bloom;
   ctx.fillRect(0, 0, W, H);
 
@@ -168,7 +168,7 @@ export function renderCardCanvas({ url, table = '', scale = 2 }) {
   ctx.textBaseline = 'alphabetic';
 
   // Identity.
-  ctx.fillStyle = 'rgba(142,113,40,0.85)';
+  ctx.fillStyle = 'rgba(168,131,56,0.85)';
   ctx.font = `34px ${f.hindi}`;
   ctx.fillText(site.nameDevanagari, cx, 150);
 
@@ -178,7 +178,7 @@ export function renderCardCanvas({ url, table = '', scale = 2 }) {
   const trade = rest.join(' ').toUpperCase();
 
   ctx.font = `600 82px ${f.display}`;
-  ctx.fillStyle = '#0A1B14';
+  ctx.fillStyle = '#1D080C';
   ctx.fillText(house, cx, 232);
 
   if (trade) {
@@ -207,7 +207,7 @@ export function renderCardCanvas({ url, table = '', scale = 2 }) {
   ctx.fillStyle = '#FFFFFF';
   roundRect(ctx, boxX, boxY, box, box, 40);
   ctx.fill();
-  ctx.strokeStyle = 'rgba(142,113,40,0.35)';
+  ctx.strokeStyle = 'rgba(168,131,56,0.35)';
   ctx.lineWidth = 2;
   roundRect(ctx, boxX, boxY, box, box, 40);
   ctx.stroke();
@@ -216,11 +216,11 @@ export function renderCardCanvas({ url, table = '', scale = 2 }) {
   // Instruction.
   ctx.textAlign = 'center';
   ctx.textBaseline = 'alphabetic';
-  ctx.fillStyle = '#0A1B14';
+  ctx.fillStyle = '#1D080C';
   ctx.font = `300 52px ${f.display}`;
   ctx.fillText('Scan for the menu', cx, 985);
 
-  ctx.fillStyle = 'rgba(142,113,40,0.9)';
+  ctx.fillStyle = 'rgba(168,131,56,0.9)';
   ctx.font = `30px ${f.hindi}`;
   ctx.fillText('मेन्यू के लिए स्कैन कीजिए', cx, 1031);
 
@@ -236,14 +236,14 @@ export function renderCardCanvas({ url, table = '', scale = 2 }) {
     const label = `TABLE ${table}`;
     ctx.font = `600 20px ${f.body}`;
     const chipW = ctx.measureText(label).width + 110;
-    ctx.fillStyle = 'rgba(212,181,99,0.16)';
+    ctx.fillStyle = 'rgba(217,184,106,0.16)';
     roundRect(ctx, cx - chipW / 2, y - 32, chipW, 52, 26);
     ctx.fill();
-    ctx.strokeStyle = 'rgba(142,113,40,0.5)';
+    ctx.strokeStyle = 'rgba(168,131,56,0.5)';
     ctx.lineWidth = 1.5;
     roundRect(ctx, cx - chipW / 2, y - 32, chipW, 52, 26);
     ctx.stroke();
-    ctx.fillStyle = '#17392B';
+    ctx.fillStyle = '#3A1019';
     tracked(ctx, label, cx, y + 2, 5);
     y += 74;
   }
@@ -260,7 +260,7 @@ export function renderCardCanvas({ url, table = '', scale = 2 }) {
   ctx.fillText(site.tagline, cx, y + 50);
 
   ctx.font = `16px ${f.body}`;
-  ctx.fillStyle = '#5A5341';
+  ctx.fillStyle = '#6B5257';
   tracked(ctx, `${site.phone}  ·  11 AM – 11 PM`, cx, y + 92, 4);
 
   ctx.fillStyle = GOLD;

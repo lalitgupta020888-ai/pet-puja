@@ -19,7 +19,7 @@ export default function Menu() {
   return (
     <section id="menu" className="relative scroll-mt-24 py-28 lg:py-40">
       {/* Warm wash behind the menu so it reads as its own room. */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(212,181,99,0.10),transparent_55%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(217,184,106,0.10),transparent_55%)]" />
 
       <div className="shell relative">
         <SectionHeading
@@ -43,7 +43,7 @@ export default function Menu() {
                 aria-pressed={on}
                 className={`group rounded-full border px-5 py-3 text-[0.7rem] uppercase tracking-widest transition-all duration-300 ${
                   on
-                    ? 'border-gold-400 bg-gold-400 text-forest-950'
+                    ? 'border-gold-400 bg-gold-400 text-wine-950'
                     : 'border-white/10 text-cream-300 hover:border-gold-400/50 hover:text-gold-200'
                 }`}
               >

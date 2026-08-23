@@ -68,8 +68,8 @@ export default function Gallery() {
                 sizes="(max-width: 1024px) 50vw, 25vw"
                 className="object-cover transition-transform duration-[1.1s] ease-out group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-forest-950/25 transition-colors duration-500 group-hover:bg-forest-950/0" />
-              <div className="absolute inset-x-0 bottom-0 translate-y-3 bg-gradient-to-t from-forest-950/90 to-transparent p-4 text-left opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+              <div className="absolute inset-0 bg-wine-950/25 transition-colors duration-500 group-hover:bg-wine-950/0" />
+              <div className="absolute inset-x-0 bottom-0 translate-y-3 bg-gradient-to-t from-wine-950/90 to-transparent p-4 text-left opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                 <span className="text-xs uppercase tracking-widest text-cream-200">{shot.alt}</span>
               </div>
             </button>
@@ -83,7 +83,7 @@ export default function Gallery() {
           role="dialog"
           aria-modal="true"
           aria-label={current.alt}
-          className="fixed inset-0 z-[60] flex items-center justify-center bg-forest-950/95 p-4 backdrop-blur-md sm:p-8"
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-wine-950/95 p-4 backdrop-blur-md sm:p-8"
           onClick={close}
         >
           <button
