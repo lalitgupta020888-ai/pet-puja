@@ -9,16 +9,16 @@
   }
 
   body {
-    @apply bg-wine-950 font-sans text-cream-300 antialiased;
+    @apply bg-bark-950 font-sans text-cream-300 antialiased;
     text-rendering: optimizeLegibility;
   }
 
   ::selection {
-    @apply bg-gold-400 text-wine-950;
+    @apply bg-ember-500 text-cream-50;
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-gold-400 ring-offset-2 ring-offset-wine-950;
+    @apply outline-none ring-2 ring-ember-400 ring-offset-2 ring-offset-bark-950;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -42,16 +42,16 @@
 
   /* Section label: Devanagari word, rule, then the English kicker. */
   .eyebrow {
-    @apply inline-flex items-center gap-3 text-[0.68rem] font-medium uppercase tracking-brand text-gold-400;
+    @apply inline-flex items-center gap-3 text-[0.68rem] font-medium uppercase tracking-brand text-ember-400;
   }
 
   .eyebrow::before {
     content: '';
-    @apply h-px w-8 bg-gold-400/50;
+    @apply h-px w-8 bg-ember-400/50;
   }
 
   .rule {
-    @apply h-px w-full bg-gradient-to-r from-transparent via-gold-400/25 to-transparent;
+    @apply h-px w-full bg-gradient-to-r from-transparent via-ember-400/25 to-transparent;
   }
 
   .btn {
@@ -59,15 +59,15 @@
   }
 
   .btn-primary {
-    @apply btn bg-gold-400 text-wine-950 hover:bg-gold-300 hover:shadow-[0_14px_44px_-12px_rgba(217,184,106,0.8)];
+    @apply btn bg-ember-500 text-cream-50 hover:bg-ember-600 hover:shadow-[0_14px_44px_-12px_rgba(192,88,0,0.8)];
   }
 
   .btn-ghost {
-    @apply btn border border-gold-400/35 text-cream-100 hover:border-gold-400 hover:bg-gold-400/10;
+    @apply btn border border-ember-400/35 text-cream-100 hover:border-ember-400 hover:bg-ember-400/10;
   }
 
   .surface {
-    @apply rounded-3xl border border-white/[0.06] bg-wine-800/70 backdrop-blur-sm;
+    @apply rounded-3xl border border-white/[0.06] bg-bark-800/70 backdrop-blur-sm;
   }
 
   /* Devanagari display lockup — used for the wordmark and section marks. */

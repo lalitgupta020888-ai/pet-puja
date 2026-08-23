@@ -42,8 +42,8 @@ opening hours and contact details are plain data — no component edits required
 
 | | |
 |---|---|
-| **Ground** | `wine` — deep burgundy-blacks, the lacquer of a haveli door. |
-| **Primary** | `gold` — old temple leaf, not neon. |
+| **Ground** | `bark` — roasted browns, the tandoor wall after a long service. |
+| **Primary** | `ember` — burnt orange, the colour of coals. |
 | **Accent** | `vermilion` for heat and emphasis; `pista` green for veg marks and the open-now chip. |
 | **Display** | Fraunces |
 | **Body** | Inter |

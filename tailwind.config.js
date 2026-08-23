@@ -4,47 +4,49 @@ const config = {
   theme: {
     extend: {
       colors: {
-        // Wine-blacks — deep burgundy, the lacquer of a haveli door. The ground
-        // everything sits on.
-        wine: {
-          950: '#150609',
-          900: '#1D080C',
-          800: '#2A0C13',
-          700: '#3A1019',
-          600: '#4C1620',
-          500: '#631E2A',
+        // Roasted browns — the tandoor wall after a long service. The ground
+        // everything sits on. 800 is the palette's #38240D.
+        bark: {
+          950: '#1A1006',
+          900: '#241608',
+          800: '#38240D',
+          700: '#4A3113',
+          600: '#5D3E19',
+          500: '#714C20',
         },
-        // Old gold — worn temple leaf, not neon. Primary accent.
-        gold: {
-          100: '#FDF6E3',
-          200: '#F6E3B4',
-          300: '#E8CE8E',
-          400: '#D9B86A',
-          500: '#BE9B49',
-          600: '#A88338',
+        // Ember — burnt orange, the colour of coals. 500 is the palette's
+        // #C05800 and 600 its #713600; the lighter steps are tints of the same
+        // hue, because #C05800 as small type on a dark ground does not carry
+        // enough contrast to read.
+        ember: {
+          100: '#FFEFD6',
+          200: '#FBD5A4',
+          300: '#F0A857',
+          400: '#E08A2E',
+          500: '#C05800',
+          600: '#713600',
         },
-        // Vermilion — heat pips and form errors. Pushed towards coral because a
-        // true red would sink into the burgundy ground and stop reading as a
-        // warning.
+        // Vermilion — heat pips and form errors. Kept pink-red so it never gets
+        // mistaken for the burnt-orange accent.
         vermilion: {
-          300: '#FFB08A',
-          400: '#FF8A5B',
-          500: '#E0663A',
-          600: '#B84B26',
+          300: '#FF9A8A',
+          400: '#F4674F',
+          500: '#D6452C',
+          600: '#A93318',
         },
-        // Pista — the veg mark and pistachio garnish. The one cool note, and it
-        // carries plenty of contrast against the wine.
+        // Pista — the veg mark and pistachio garnish. The one cool note.
         pista: {
           400: '#A8D65C',
           500: '#86B93F',
         },
-        // Ivory — warm white for type on the dark ground and for printed paper.
+        // Cream — the palette's #FDFBD4, a pale butter. Display type on the dark
+        // ground, and the stock the printed card is laid on.
         cream: {
-          50: '#FBF4EC',
-          100: '#F6EDE3',
-          200: '#E9DCCF',
-          300: '#D3BFB6',
-          400: '#A08A82',
+          50: '#FDFBD4',
+          100: '#F7F3C6',
+          200: '#E6E1B0',
+          300: '#CFC6A4',
+          400: '#9B9070',
         },
       },
       fontFamily: {
@@ -63,7 +65,7 @@ const config = {
           "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E\")",
         // Faint concentric rings — a rangoli/thali echo behind key sections.
         rings:
-          "radial-gradient(circle at 50% 50%, transparent 0 28%, rgba(217,184,106,0.07) 28% 28.4%, transparent 28.4% 44%, rgba(217,184,106,0.05) 44% 44.3%, transparent 44.3%)",
+          "radial-gradient(circle at 50% 50%, transparent 0 28%, rgba(192,88,0,0.07) 28% 28.4%, transparent 28.4% 44%, rgba(192,88,0,0.05) 44% 44.3%, transparent 44.3%)",
       },
       animation: {
         'ken-burns': 'kenBurns 26s ease-in-out infinite alternate',

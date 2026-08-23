@@ -28,7 +28,7 @@ function validate(values, mode) {
 }
 
 const inputClass =
-  'w-full rounded-xl border border-white/10 bg-wine-950/60 px-4 py-3 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-gold-400 focus:outline-none';
+  'w-full rounded-xl border border-white/10 bg-bark-950/60 px-4 py-3 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-ember-400 focus:outline-none';
 
 export default function CartDrawer() {
   const { items, count, open, closeCart, setQty, remove, clear, table } = useCart();
@@ -92,7 +92,7 @@ export default function CartDrawer() {
 
   return (
     <div
-      className="fixed inset-0 z-[70] flex justify-end bg-wine-950/80 backdrop-blur-sm"
+      className="fixed inset-0 z-[70] flex justify-end bg-bark-950/80 backdrop-blur-sm"
       onClick={closeCart}
     >
       <aside
@@ -100,12 +100,12 @@ export default function CartDrawer() {
         aria-modal="true"
         aria-label="Your order"
         onClick={(e) => e.stopPropagation()}
-        className="flex h-full w-full max-w-lg flex-col border-l border-white/[0.08] bg-wine-900 shadow-2xl"
+        className="flex h-full w-full max-w-lg flex-col border-l border-white/[0.08] bg-bark-900 shadow-2xl"
       >
         {/* Head */}
         <header className="flex items-center justify-between border-b border-white/[0.07] px-6 py-5">
           <div>
-            <p className="devanagari text-lg text-gold-300/85">आपका ऑर्डर</p>
+            <p className="devanagari text-lg text-ember-300/85">आपका ऑर्डर</p>
             <h2 className="mt-1 font-display text-2xl font-light text-cream-50">
               {step === 'done' ? 'Order placed' : 'Your order'}
             </h2>
@@ -114,7 +114,7 @@ export default function CartDrawer() {
             type="button"
             onClick={closeCart}
             aria-label="Close order"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-xl leading-none text-cream-100 transition-colors hover:border-gold-400 hover:text-gold-300"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-xl leading-none text-cream-100 transition-colors hover:border-ember-400 hover:text-ember-300"
           >
             ×
           </button>
@@ -123,10 +123,10 @@ export default function CartDrawer() {
         {/* ---------------------------------------------------------- done */}
         {step === 'done' && placed && (
           <div className="flex flex-1 flex-col items-center justify-center px-8 text-center">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-gold-400/40 text-3xl text-gold-300">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-ember-400/40 text-3xl text-ember-300">
               ✦
             </div>
-            <p className="mt-7 text-[0.65rem] uppercase tracking-brand text-gold-400">
+            <p className="mt-7 text-[0.65rem] uppercase tracking-brand text-ember-400">
               Reference {placed.ref}
             </p>
             <h3 className="mt-4 font-display text-3xl font-light text-cream-50">
@@ -136,7 +136,7 @@ export default function CartDrawer() {
               We have opened WhatsApp with your order. Send that message and we will call to
               confirm on {site.phone}. Nothing is cooking until you do.
             </p>
-            <p className="mt-6 font-display text-2xl text-gold-300">
+            <p className="mt-6 font-display text-2xl text-ember-300">
               {formatINR(placed.totals.total)}
             </p>
             <button type="button" onClick={restart} className="btn-ghost mt-9">
@@ -148,7 +148,7 @@ export default function CartDrawer() {
         {/* ---------------------------------------------------------- empty */}
         {step !== 'done' && !count && (
           <div className="flex flex-1 flex-col items-center justify-center px-8 text-center">
-            <p className="devanagari text-4xl text-gold-400/25">थाली</p>
+            <p className="devanagari text-4xl text-ember-400/25">थाली</p>
             <h3 className="mt-6 font-display text-2xl font-light text-cream-50">
               Your thali is empty
             </h3>
@@ -169,7 +169,7 @@ export default function CartDrawer() {
                 {items.map((line) => (
                   <li
                     key={line.key}
-                    className="flex items-center gap-4 rounded-2xl border border-white/[0.06] bg-wine-950/50 p-3"
+                    className="flex items-center gap-4 rounded-2xl border border-white/[0.06] bg-bark-950/50 p-3"
                   >
                     <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl">
                       <Image
@@ -191,7 +191,7 @@ export default function CartDrawer() {
                     </div>
 
                     <div className="flex flex-col items-end gap-2">
-                      <span className="font-display text-lg text-gold-300">
+                      <span className="font-display text-lg text-ember-300">
                         {formatINR(line.price * line.qty)}
                       </span>
                       <div className="inline-flex items-center gap-1 rounded-full border border-white/10">
@@ -258,10 +258,10 @@ export default function CartDrawer() {
           <form onSubmit={placeOrder} noValidate className="flex flex-1 flex-col overflow-hidden">
             <div className="flex-1 space-y-6 overflow-y-auto px-6 py-5">
               {table && (
-                <p className="rounded-xl border border-gold-400/25 bg-gold-400/[0.07] px-4 py-3 text-sm leading-relaxed text-cream-200">
-                  <span className="devanagari mr-2 text-gold-300">मेज़</span>
+                <p className="rounded-xl border border-ember-400/25 bg-ember-400/[0.07] px-4 py-3 text-sm leading-relaxed text-cream-200">
+                  <span className="devanagari mr-2 text-ember-300">मेज़</span>
                   You scanned the card on{' '}
-                  <strong className="font-semibold text-gold-300">table {table}</strong> — we
+                  <strong className="font-semibold text-ember-300">table {table}</strong> — we
                   will bring it to you there.
                 </p>
               )}
@@ -282,8 +282,8 @@ export default function CartDrawer() {
                         aria-pressed={on}
                         className={`rounded-xl border px-3 py-3 text-center transition-all duration-300 ${
                           on
-                            ? 'border-gold-400 bg-gold-400 text-wine-950'
-                            : 'border-white/10 text-cream-300 hover:border-gold-400/50'
+                            ? 'border-ember-500 bg-ember-500 text-cream-50'
+                            : 'border-white/10 text-cream-300 hover:border-ember-400/50'
                         }`}
                       >
                         <span className="block text-[0.65rem] font-semibold uppercase tracking-widest">
@@ -291,7 +291,7 @@ export default function CartDrawer() {
                         </span>
                         <span
                           className={`devanagari mt-1 block text-[0.7rem] ${
-                            on ? 'text-wine-900/70' : 'text-gold-400/70'
+                            on ? 'text-bark-900/70' : 'text-ember-400/70'
                           }`}
                         >
                           {m.hi}

@@ -33,7 +33,7 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled || open
-          ? 'border-b border-white/[0.07] bg-wine-950/85 backdrop-blur-xl'
+          ? 'border-b border-white/[0.07] bg-bark-950/85 backdrop-blur-xl'
           : 'border-b border-transparent bg-transparent'
       }`}
     >
@@ -45,11 +45,11 @@ export default function Header() {
         >
           {/* Wordmark: Devanagari sits above the latin, as on a shopfront board. */}
           <a href="#top" className="group flex items-center gap-3.5">
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold-400/40 text-gold-300 transition-colors duration-500 group-hover:border-gold-300 group-hover:bg-gold-400/10">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-ember-400/40 text-ember-300 transition-colors duration-500 group-hover:border-ember-300 group-hover:bg-ember-400/10">
               <span className="devanagari text-lg">म</span>
             </span>
             <span className="flex flex-col leading-none">
-              <span className="devanagari text-[0.68rem] text-gold-400/85">
+              <span className="devanagari text-[0.68rem] text-ember-400/85">
                 {site.nameDevanagari}
               </span>
               <Wordmark size="md" className="mt-1.5" />
@@ -63,13 +63,13 @@ export default function Header() {
                 href={link.href}
                 className="group relative flex flex-col items-center gap-0.5"
               >
-                <span className="devanagari text-[0.6rem] text-gold-400/0 transition-colors duration-300 group-hover:text-gold-400/80">
+                <span className="devanagari text-[0.6rem] text-ember-400/0 transition-colors duration-300 group-hover:text-ember-400/80">
                   {link.hi}
                 </span>
-                <span className="text-[0.72rem] font-medium uppercase tracking-widest text-cream-300 transition-colors group-hover:text-gold-200">
+                <span className="text-[0.72rem] font-medium uppercase tracking-widest text-cream-300 transition-colors group-hover:text-ember-200">
                   {link.label}
                 </span>
-                <span className="absolute -bottom-1.5 h-px w-0 bg-gold-400 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1.5 h-px w-0 bg-ember-400 transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </nav>
@@ -86,7 +86,7 @@ export default function Header() {
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-gold-400/30 text-cream-100 lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-ember-400/30 text-cream-100 lg:hidden"
           >
             <span className="relative block h-3 w-5">
               <span
@@ -116,10 +116,10 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="flex items-baseline justify-between border-b border-white/[0.05] py-4 transition-colors hover:text-gold-200"
+              className="flex items-baseline justify-between border-b border-white/[0.05] py-4 transition-colors hover:text-ember-200"
             >
               <span className="font-display text-3xl font-light text-cream-100">{link.label}</span>
-              <span className="devanagari text-sm text-gold-400/70">{link.hi}</span>
+              <span className="devanagari text-sm text-ember-400/70">{link.hi}</span>
             </a>
           ))}
           <a href={site.phoneHref} className="btn-primary mt-8 w-full">

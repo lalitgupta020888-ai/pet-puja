@@ -48,7 +48,7 @@ function Field({ label, name, error, touched, children }) {
 }
 
 const inputClass =
-  'w-full rounded-xl border border-white/10 bg-wine-950/60 px-4 py-3.5 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-gold-400 focus:outline-none';
+  'w-full rounded-xl border border-white/10 bg-bark-950/60 px-4 py-3.5 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-ember-400 focus:outline-none';
 
 export default function Reserve() {
   const [values, setValues] = useState(EMPTY);
@@ -113,14 +113,14 @@ export default function Reserve() {
                   className="reveal border-t border-white/[0.07] pt-6"
                   style={{ '--reveal-delay': `${i * 90}ms` }}
                 >
-                  <dt className="text-[0.65rem] uppercase tracking-brand text-gold-400">
+                  <dt className="text-[0.65rem] uppercase tracking-brand text-ember-400">
                     {row.term}
                   </dt>
                   <dd className="mt-2 font-display text-2xl font-light text-cream-100">
                     {row.href ? (
                       <a
                         href={row.href}
-                        className="transition-colors hover:text-gold-300"
+                        className="transition-colors hover:text-ember-300"
                         {...(row.href.startsWith('http')
                           ? { target: '_blank', rel: 'noopener noreferrer' }
                           : {})}
@@ -141,15 +141,15 @@ export default function Reserve() {
             <h3 className="font-display text-3xl font-light text-cream-50">Request a table</h3>
             <p className="mt-3 text-sm leading-relaxed text-cream-300/70">
               Send us the details and we will confirm by phone. In a hurry?{' '}
-              <a href={site.phoneHref} className="text-gold-300 underline underline-offset-4">
+              <a href={site.phoneHref} className="text-ember-300 underline underline-offset-4">
                 Just call us
               </a>
               .
             </p>
 
             {sent ? (
-              <div className="mt-10 rounded-2xl border border-gold-400/30 bg-gold-400/[0.07] p-8 text-center">
-                <p className="font-display text-2xl text-gold-200">Your email is ready to send</p>
+              <div className="mt-10 rounded-2xl border border-ember-400/30 bg-ember-400/[0.07] p-8 text-center">
+                <p className="font-display text-2xl text-ember-200">Your email is ready to send</p>
                 <p className="mt-3 text-sm leading-relaxed text-cream-300/75">
                   We have opened your mail app with the request filled in. Send it and we will call
                   you back to confirm — or reach us directly on {site.phone}.
