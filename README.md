@@ -3,7 +3,7 @@
 Marketing site for **Madhurima Food Park**, built with **Next.js 15 (App Router)**, **React 19** and
 **Tailwind CSS**.
 
-> *Pet puja* — the oldest ritual there is. The whole site is built around that idea:
+> Eating well is the oldest ritual there is. The whole site is built around that idea:
 > eating well as a daily ceremony, not an occasion.
 
 ## Running it
