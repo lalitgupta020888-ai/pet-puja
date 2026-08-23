@@ -1,5 +1,6 @@
 import { site } from '@/data/site';
 import QRCode from './QRCode';
+import Wordmark from './Wordmark';
 
 /**
  * The printed table card. Designed to be read at arm's length on a table, so
@@ -34,18 +35,10 @@ export default function QRCard({ url, table = '', className = '' }) {
         <p className="devanagari text-sm tracking-wide text-marigold-600/80">
           {site.nameDevanagari}
         </p>
-        <p className="mt-2 font-display text-[2.6rem] font-semibold leading-none tracking-tight text-masala-900">
-          Pet <span className="text-marigold-500">Puja</span>
-        </p>
+        <Wordmark size="xl" tone="print" align="center" className="mt-2" />
         <p className="mt-3 text-[0.58rem] font-medium uppercase tracking-brand text-masala-600">
           Est. {site.established}
         </p>
-
-        <div aria-hidden className="mt-5 flex items-center justify-center gap-3">
-          <span className="h-px w-16 bg-gradient-to-r from-transparent to-marigold-500/60" />
-          <span className="text-[0.6rem] text-marigold-500">✦</span>
-          <span className="h-px w-16 bg-gradient-to-l from-transparent to-marigold-500/60" />
-        </div>
 
         {/* ----------------------------------------------------------- code */}
         <div className="mt-6 inline-block rounded-3xl border border-marigold-500/25 bg-white p-3 shadow-[0_18px_40px_-24px_rgba(120,70,10,0.6)]">

@@ -29,7 +29,7 @@ export default function Testimonials() {
         >
           <span
             aria-hidden
-            className="pointer-events-none absolute -top-12 left-1/2 -translate-x-1/2 font-display text-[9rem] leading-none text-marigold-400/12"
+            className="pointer-events-none absolute -top-12 left-1/2 -translate-x-1/2 font-display text-[9rem] leading-none text-marigold-400/10"
           >
             &ldquo;
           </span>

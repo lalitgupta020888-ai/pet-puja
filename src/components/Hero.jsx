@@ -8,14 +8,14 @@ export default function Hero() {
     <section id="top" className="relative min-h-[100svh] overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src={img('photo-1603894584373-5ac82b2ae398', { w: 2000, q: 70 })}
+          src={img('photo-1627366422957-3efa9c6df0fc', { w: 2000, q: 70 })}
           alt=""
           fill
           priority
           sizes="100vw"
           className="animate-ken-burns object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-masala-950/88 via-masala-950/72 to-masala-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-masala-950/90 via-masala-950/80 to-masala-950" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(233,161,59,0.20),transparent_62%)]" />
       </div>
 
@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="shell relative flex min-h-[100svh] flex-col justify-center pb-16 pt-36">
         <div className="max-w-3xl">
           <div className="flex flex-wrap items-center gap-4">
-            <p className="eyebrow">Since {site.established} · North Indian</p>
+            <p className="eyebrow">Since {site.established} · Pure Veg · North Indian</p>
             <OpenStatus />
           </div>
 

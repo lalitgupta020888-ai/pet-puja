@@ -10,6 +10,7 @@ import { useCart } from '@/context/CartContext';
 import AddToCart from './AddToCart';
 import OpenStatus from './OpenStatus';
 import { DietMark, Heat } from './DishMarks';
+import Wordmark from './Wordmark';
 
 /** Categories minus the "all" pseudo-entry, in menu order. */
 const COURSES = categories.filter((c) => c.id !== 'all');
@@ -174,9 +175,7 @@ export default function OrderClient() {
               <span className="devanagari text-[0.6rem] text-marigold-400/85">
                 {site.nameDevanagari}
               </span>
-              <span className="mt-1 font-display text-lg font-semibold tracking-tight text-cream-50">
-                Pet <span className="text-marigold-300">Puja</span>
-              </span>
+              <Wordmark size="sm" className="mt-1" />
             </span>
           </a>
 
@@ -226,7 +225,7 @@ export default function OrderClient() {
       </section>
 
       {/* ---------------------------------------------------------- filters */}
-      <div className="sticky top-16 z-30 border-b border-white/[0.05] bg-masala-950/92 py-3 backdrop-blur-xl">
+      <div className="sticky top-16 z-30 border-b border-white/[0.05] bg-masala-950/90 py-3 backdrop-blur-xl">
         <div className="shell flex items-center gap-3">
           <div className="no-scrollbar -mx-1 flex min-w-0 flex-1 gap-2 overflow-x-auto px-1">
             {categories.map((cat) => {

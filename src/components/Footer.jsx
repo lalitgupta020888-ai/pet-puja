@@ -1,4 +1,5 @@
 import { navLinks, site } from '@/data/site';
+import Wordmark from './Wordmark';
 
 export default function Footer() {
   return (
@@ -9,9 +10,7 @@ export default function Footer() {
         <div className="grid gap-12 pb-16 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <p className="devanagari text-2xl text-marigold-300/85">{site.nameDevanagari}</p>
-            <p className="mt-3 font-display text-3xl font-semibold text-cream-50">
-              Pet <span className="text-marigold-400">Puja</span>
-            </p>
+            <Wordmark size="lg" className="mt-3" />
             <p className="mt-5 max-w-sm leading-relaxed text-cream-300/65">
               {site.tagline} A roadside kitchen that never learned to cut corners — feeding
               this town since {site.established}.

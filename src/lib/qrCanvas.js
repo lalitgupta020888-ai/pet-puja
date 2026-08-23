@@ -49,7 +49,10 @@ function roundRect(ctx, x, y, w, h, r) {
   ctx.closePath();
 }
 
-/** Letter-spaced centred text — canvas has no tracking we can rely on. */
+/**
+ * Letter-spaced centred text — canvas has no tracking we can rely on.
+ * @returns {number} the drawn width, so callers can flank it with rules.
+ */
 function tracked(ctx, text, cx, y, spacing) {
   const chars = [...text];
   const width =
@@ -62,6 +65,7 @@ function tracked(ctx, text, cx, y, spacing) {
     x += ctx.measureText(c).width + spacing;
   }
   ctx.textAlign = prev;
+  return width;
 }
 
 function drawQR(ctx, value, x, y, box) {
@@ -168,33 +172,33 @@ export function renderCardCanvas({ url, table = '', scale = 2 }) {
   ctx.font = `34px ${f.hindi}`;
   ctx.fillText(site.nameDevanagari, cx, 150);
 
+  // The same lockup the <Wordmark> renders on screen: the house name in the
+  // display face, the trade tracked out beneath it under a gold hairline.
+  const [house, ...rest] = site.name.split(' ');
+  const trade = rest.join(' ').toUpperCase();
+
   ctx.font = `600 82px ${f.display}`;
-  const petW = ctx.measureText('Pet ').width;
-  const pujaW = ctx.measureText('Puja').width;
-  const startX = cx - (petW + pujaW) / 2;
-  ctx.textAlign = 'left';
   ctx.fillStyle = '#140E0A';
-  ctx.fillText('Pet ', startX, 235);
-  ctx.fillStyle = '#D2842A';
-  ctx.fillText('Puja', startX + petW, 235);
-  ctx.textAlign = 'center';
+  ctx.fillText(house, cx, 232);
+
+  if (trade) {
+    ctx.fillStyle = GOLD;
+    ctx.font = `500 19px ${f.body}`;
+    const tradeW = tracked(ctx, trade, cx, 274, 9);
+    // Hairlines run out to either side of the trade line.
+    ctx.strokeStyle = GOLD_SOFT;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(cx - tradeW / 2 - 96, 268);
+    ctx.lineTo(cx - tradeW / 2 - 22, 268);
+    ctx.moveTo(cx + tradeW / 2 + 22, 268);
+    ctx.lineTo(cx + tradeW / 2 + 96, 268);
+    ctx.stroke();
+  }
 
   ctx.fillStyle = MUTED;
   ctx.font = `500 17px ${f.body}`;
-  tracked(ctx, `EST. ${site.established}`, cx, 275, 7);
-
-  // Divider.
-  ctx.strokeStyle = GOLD_SOFT;
-  ctx.lineWidth = 1.5;
-  ctx.beginPath();
-  ctx.moveTo(cx - 150, 310);
-  ctx.lineTo(cx - 30, 310);
-  ctx.moveTo(cx + 30, 310);
-  ctx.lineTo(cx + 150, 310);
-  ctx.stroke();
-  ctx.fillStyle = GOLD;
-  ctx.font = `20px ${f.body}`;
-  ctx.fillText('✦', cx, 317);
+  tracked(ctx, `EST. ${site.established}`, cx, 314, 7);
 
   // Code tile.
   const box = 560;

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { navLinks, site } from '@/data/site';
 import OpenStatus from './OpenStatus';
+import Wordmark from './Wordmark';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -51,9 +52,7 @@ export default function Header() {
               <span className="devanagari text-[0.68rem] text-marigold-400/85">
                 {site.nameDevanagari}
               </span>
-              <span className="mt-1.5 font-display text-2xl font-semibold tracking-tight text-cream-50">
-                Pet <span className="text-marigold-300">Puja</span>
-              </span>
+              <Wordmark size="md" className="mt-1.5" />
             </span>
           </a>
 
