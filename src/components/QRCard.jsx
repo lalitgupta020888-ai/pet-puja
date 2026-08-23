@@ -18,36 +18,36 @@ export default function QRCard({ url, table = '', className = '' }) {
       {/* Gold foil edge: a heavy rule with a hairline shadowing it inside. */}
       <span
         aria-hidden
-        className="pointer-events-none absolute inset-[0.55rem] rounded-[1.6rem] border border-marigold-500/45"
+        className="pointer-events-none absolute inset-[0.55rem] rounded-[1.6rem] border border-gold-500/45"
       />
       <span
         aria-hidden
-        className="pointer-events-none absolute inset-[0.95rem] rounded-[1.35rem] border border-marigold-500/20"
+        className="pointer-events-none absolute inset-[0.95rem] rounded-[1.35rem] border border-gold-500/20"
       />
       {/* A warm bloom behind the code so the cream does not read as flat paper. */}
       <span
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_38%,rgba(233,161,59,0.16),transparent_62%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_38%,rgba(212,181,99,0.16),transparent_62%)]"
       />
 
       <div className="relative">
         {/* ------------------------------------------------------- identity */}
-        <p className="devanagari text-sm tracking-wide text-marigold-600/80">
+        <p className="devanagari text-sm tracking-wide text-gold-600/80">
           {site.nameDevanagari}
         </p>
         <Wordmark size="xl" tone="print" align="center" className="mt-2" />
-        <p className="mt-3 text-[0.58rem] font-medium uppercase tracking-brand text-masala-600">
+        <p className="mt-3 text-[0.58rem] font-medium uppercase tracking-brand text-forest-600">
           Est. {site.established}
         </p>
 
         {/* ----------------------------------------------------------- code */}
-        <div className="mt-6 inline-block rounded-3xl border border-marigold-500/25 bg-white p-3 shadow-[0_18px_40px_-24px_rgba(120,70,10,0.6)]">
+        <div className="mt-6 inline-block rounded-3xl border border-gold-500/25 bg-white p-3 shadow-[0_18px_40px_-24px_rgba(20,45,32,0.55)]">
           <QRCode
             value={url}
             size={352}
             quiet={2}
-            dark="#231710"
-            accent="#B4741F"
+            dark="#102A20"
+            accent="#8E7128"
             background="#FFFFFF"
             logoBackground="#FFFFFF"
             title={`Scan to open the Madhurima Food Park menu${table ? ` — table ${table}` : ''}`}
@@ -56,36 +56,36 @@ export default function QRCard({ url, table = '', className = '' }) {
         </div>
 
         {/* --------------------------------------------------- instruction */}
-        <p className="mt-6 font-display text-2xl font-light leading-tight text-masala-900">
+        <p className="mt-6 font-display text-2xl font-light leading-tight text-forest-900">
           Scan for the menu
         </p>
-        <p className="devanagari mt-1.5 text-base text-marigold-600/85">
+        <p className="devanagari mt-1.5 text-base text-gold-600/85">
           मेन्यू के लिए स्कैन कीजिए
         </p>
-        <p className="mx-auto mt-3 max-w-[17rem] text-[0.82rem] leading-relaxed text-masala-600">
+        <p className="mx-auto mt-3 max-w-[17rem] text-[0.82rem] leading-relaxed text-forest-600">
           Point your camera at the code. The whole kitchen opens on your phone — order
           without waiting for anyone.
         </p>
 
         {table && (
-          <p className="mt-5 inline-flex items-center gap-2.5 rounded-full border border-marigold-500/40 bg-marigold-400/15 px-5 py-2">
-            <span className="devanagari text-sm text-marigold-600">मेज़</span>
-            <span className="text-[0.62rem] font-semibold uppercase tracking-widest text-masala-700">
+          <p className="mt-5 inline-flex items-center gap-2.5 rounded-full border border-gold-500/40 bg-gold-400/15 px-5 py-2">
+            <span className="devanagari text-sm text-gold-600">मेज़</span>
+            <span className="text-[0.62rem] font-semibold uppercase tracking-widest text-forest-700">
               Table
             </span>
-            <span className="font-display text-lg font-semibold leading-none text-masala-900">
+            <span className="font-display text-lg font-semibold leading-none text-forest-900">
               {table}
             </span>
           </p>
         )}
 
         {/* -------------------------------------------------------- footer */}
-        <div aria-hidden className="mt-7 h-px w-full bg-marigold-500/20" />
-        <p className="mt-4 font-display text-sm italic text-masala-600">{site.tagline}</p>
-        <p className="mt-2.5 text-[0.6rem] uppercase tracking-widest text-masala-500">
+        <div aria-hidden className="mt-7 h-px w-full bg-gold-500/20" />
+        <p className="mt-4 font-display text-sm italic text-forest-600">{site.tagline}</p>
+        <p className="mt-2.5 text-[0.6rem] uppercase tracking-widest text-forest-500">
           {site.phone} · {site.hours.replace('Every day · ', '')}
         </p>
-        <p className="mt-1.5 text-[0.6rem] uppercase tracking-brand text-marigold-600">
+        <p className="mt-1.5 text-[0.6rem] uppercase tracking-brand text-gold-600">
           {site.url.replace('https://', '')}
         </p>
       </div>

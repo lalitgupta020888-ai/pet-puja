@@ -17,7 +17,7 @@ export default function Testimonials() {
   return (
     <section
       id="guests"
-      className="relative scroll-mt-24 border-y border-white/[0.06] bg-masala-900/40 py-28 lg:py-40"
+      className="relative scroll-mt-24 border-y border-white/[0.06] bg-forest-900/40 py-28 lg:py-40"
     >
       <div className="shell">
         <SectionHeading hi="मेहमान" eyebrow="Our Guests" title="In their" accent="own words" align="center" />
@@ -29,7 +29,7 @@ export default function Testimonials() {
         >
           <span
             aria-hidden
-            className="pointer-events-none absolute -top-12 left-1/2 -translate-x-1/2 font-display text-[9rem] leading-none text-marigold-400/10"
+            className="pointer-events-none absolute -top-12 left-1/2 -translate-x-1/2 font-display text-[9rem] leading-none text-gold-400/10"
           >
             &ldquo;
           </span>
@@ -45,7 +45,7 @@ export default function Testimonials() {
                     : 'pointer-events-none translate-y-4 opacity-0'
                 }`}
               >
-                <div className="flex gap-1 text-marigold-400" aria-label={`${t.rating} out of 5`}>
+                <div className="flex gap-1 text-gold-400" aria-label={`${t.rating} out of 5`}>
                   {Array.from({ length: t.rating }).map((_, s) => (
                     <span key={s}>★</span>
                   ))}
@@ -56,7 +56,7 @@ export default function Testimonials() {
                 </blockquote>
 
                 <figcaption className="mt-8">
-                  <div className="font-display text-lg text-marigold-300">{t.name}</div>
+                  <div className="font-display text-lg text-gold-300">{t.name}</div>
                   <div className="mt-1 text-[0.65rem] uppercase tracking-brand text-cream-400">
                     {t.role}
                   </div>
@@ -74,7 +74,7 @@ export default function Testimonials() {
                 aria-label={`Read review from ${t.name}`}
                 aria-current={i === index}
                 className={`h-px transition-all duration-500 ${
-                  i === index ? 'w-12 bg-marigold-400' : 'w-6 bg-cream-400/35 hover:bg-cream-400/70'
+                  i === index ? 'w-12 bg-gold-400' : 'w-6 bg-cream-400/35 hover:bg-cream-400/70'
                 }`}
               />
             ))}

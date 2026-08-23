@@ -18,10 +18,10 @@ export default function CartBar() {
         <button
           type="button"
           onClick={openCart}
-          className="flex w-full items-center justify-between gap-4 rounded-2xl bg-marigold-400 px-5 py-4 text-masala-950 shadow-[0_18px_50px_-12px_rgba(233,161,59,0.7)]"
+          className="flex w-full items-center justify-between gap-4 rounded-2xl bg-gold-400 px-5 py-4 text-forest-950 shadow-[0_18px_50px_-12px_rgba(212,181,99,0.7)]"
         >
           <span className="flex items-center gap-3">
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-masala-950/15 text-xs font-bold tabular-nums">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-forest-950/15 text-xs font-bold tabular-nums">
               {count}
             </span>
             <span className="text-[0.7rem] font-semibold uppercase tracking-widest">
@@ -36,9 +36,9 @@ export default function CartBar() {
       <button
         type="button"
         onClick={openCart}
-        className="fixed bottom-24 right-7 z-40 hidden items-center gap-3 rounded-full bg-marigold-400 py-3.5 pl-4 pr-6 text-masala-950 shadow-[0_18px_50px_-12px_rgba(233,161,59,0.7)] transition-transform duration-300 hover:scale-105 sm:flex"
+        className="fixed bottom-24 right-7 z-40 hidden items-center gap-3 rounded-full bg-gold-400 py-3.5 pl-4 pr-6 text-forest-950 shadow-[0_18px_50px_-12px_rgba(212,181,99,0.7)] transition-transform duration-300 hover:scale-105 sm:flex"
       >
-        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-masala-950/15 text-xs font-bold tabular-nums">
+        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-forest-950/15 text-xs font-bold tabular-nums">
           {count}
         </span>
         <span className="flex flex-col items-start leading-tight">

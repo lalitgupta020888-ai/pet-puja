@@ -68,7 +68,7 @@ export default function ScanToOrder() {
 
   return (
     <section id="scan" className="relative scroll-mt-24 overflow-hidden py-28 lg:py-40">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(233,161,59,0.12),transparent_58%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(212,181,99,0.12),transparent_58%)]" />
       <div className="pointer-events-none absolute inset-0 bg-rings opacity-70" />
 
       <div className="shell relative grid items-start gap-14 lg:grid-cols-[1fr_28rem] lg:gap-20">
@@ -89,11 +89,11 @@ export default function ScanToOrder() {
                 className="reveal flex gap-5"
                 style={{ '--reveal-delay': `${i * 90}ms` }}
               >
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-marigold-400/35 font-display text-lg text-marigold-300">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold-400/35 font-display text-lg text-gold-300">
                   {i + 1}
                 </span>
                 <div>
-                  <p className="devanagari text-sm text-marigold-400/80">{step.hi}</p>
+                  <p className="devanagari text-sm text-gold-400/80">{step.hi}</p>
                   <h3 className="mt-1.5 font-display text-2xl font-light text-cream-50">
                     {step.title}
                   </h3>
@@ -114,7 +114,7 @@ export default function ScanToOrder() {
 
           {/* --------------------------------------------------- controls */}
           <div className="surface mt-12 p-6">
-            <p className="text-[0.62rem] uppercase tracking-brand text-marigold-400">
+            <p className="text-[0.62rem] uppercase tracking-brand text-gold-400">
               Print a card
             </p>
 
@@ -129,13 +129,13 @@ export default function ScanToOrder() {
                   inputMode="numeric"
                   placeholder="e.g. 7"
                   aria-describedby="table-help"
-                  className="w-full rounded-xl border border-white/10 bg-masala-950/60 px-4 py-3 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-marigold-400 focus:outline-none"
+                  className="w-full rounded-xl border border-white/10 bg-forest-950/60 px-4 py-3 text-cream-100 placeholder:text-cream-400/40 transition-colors focus:border-gold-400 focus:outline-none"
                 />
                 {table && (
                   <button
                     type="button"
                     onClick={() => setTable('')}
-                    className="shrink-0 rounded-xl border border-white/10 px-4 text-[0.65rem] uppercase tracking-widest text-cream-300 transition-colors hover:border-marigold-400/60 hover:text-marigold-300"
+                    className="shrink-0 rounded-xl border border-white/10 px-4 text-[0.65rem] uppercase tracking-widest text-cream-300 transition-colors hover:border-gold-400/60 hover:text-gold-300"
                   >
                     Clear
                   </button>
@@ -164,10 +164,10 @@ export default function ScanToOrder() {
             <button
               type="button"
               onClick={copy}
-              className="mt-4 flex w-full items-center justify-between gap-3 rounded-xl border border-white/[0.07] bg-masala-950/50 px-4 py-3 text-left transition-colors hover:border-marigold-400/40"
+              className="mt-4 flex w-full items-center justify-between gap-3 rounded-xl border border-white/[0.07] bg-forest-950/50 px-4 py-3 text-left transition-colors hover:border-gold-400/40"
             >
               <span className="min-w-0 truncate font-mono text-xs text-cream-300/80">{url}</span>
-              <span className="shrink-0 text-[0.6rem] uppercase tracking-widest text-marigold-300">
+              <span className="shrink-0 text-[0.6rem] uppercase tracking-widest text-gold-300">
                 {copied ? 'Copied' : 'Copy'}
               </span>
             </button>
