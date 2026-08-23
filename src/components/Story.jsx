@@ -5,7 +5,7 @@ import SectionHeading from './SectionHeading';
 
 export default function Story() {
   return (
-    <section id="story" className="relative scroll-mt-24 border-y border-white/[0.06] bg-bark-900/40 py-28 lg:py-40">
+    <section id="story" className="relative scroll-mt-24 border-y border-white/[0.06] bg-petrol-900/40 py-28 lg:py-40">
       <div className="shell">
         <div className="grid items-start gap-16 lg:grid-cols-[1fr_1.1fr] lg:gap-24">
           {/* Stacked photographs */}
@@ -18,10 +18,10 @@ export default function Story() {
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bark-950/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-petrol-950/60 to-transparent" />
             </div>
 
-            <div className="absolute -bottom-10 -right-6 hidden aspect-square w-48 overflow-hidden rounded-2xl border border-ember-400/25 shadow-2xl sm:block lg:-right-12 lg:w-60">
+            <div className="absolute -bottom-10 -right-6 hidden aspect-square w-48 overflow-hidden rounded-2xl border border-saffron-400/25 shadow-2xl sm:block lg:-right-12 lg:w-60">
               <Image
                 src={img('photo-1697155406014-04dc649b0953', { w: 500, h: 500 })}
                 alt="Naan lifted from the tandoor wall"
@@ -45,12 +45,12 @@ export default function Story() {
               {story.map((chapter, i) => (
                 <li
                   key={chapter.year}
-                  className="reveal relative border-l border-ember-400/20 pl-8"
+                  className="reveal relative border-l border-saffron-400/20 pl-8"
                   style={{ '--reveal-delay': `${i * 120}ms` }}
                 >
-                  <span className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-ember-400" />
+                  <span className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-saffron-400" />
                   <div className="flex items-baseline gap-3">
-                    <p className="text-[0.68rem] uppercase tracking-brand text-ember-400">
+                    <p className="text-[0.68rem] uppercase tracking-brand text-saffron-400">
                       {chapter.year}
                     </p>
                     <span className="devanagari text-sm text-cream-400">{chapter.hi}</span>

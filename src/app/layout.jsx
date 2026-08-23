@@ -56,7 +56,7 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: '#1A1006',
+  themeColor: '#072935',
   colorScheme: 'dark',
 };
 
@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
       <body>
         <a
           href="#menu"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-6 focus:top-6 focus:z-[100] focus:rounded-full focus:bg-ember-500 focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-cream-50"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-6 focus:top-6 focus:z-[100] focus:rounded-full focus:bg-terracotta-500 focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-cream-50"
         >
           Skip to menu
         </a>

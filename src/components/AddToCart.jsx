@@ -21,7 +21,7 @@ export default function AddToCart({ item, variant = 'compact', label = 'Add' }) 
         className={
           full
             ? 'btn-primary w-full'
-            : 'inline-flex items-center gap-1.5 rounded-full border border-ember-400/45 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-widest text-ember-300 transition-all duration-300 hover:border-ember-400 hover:bg-ember-400 hover:text-bark-950'
+            : 'inline-flex items-center gap-1.5 rounded-full border border-saffron-400/45 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-widest text-saffron-300 transition-all duration-300 hover:border-saffron-400 hover:bg-saffron-400 hover:text-petrol-950'
         }
       >
         <span aria-hidden className="text-sm leading-none">
@@ -36,7 +36,7 @@ export default function AddToCart({ item, variant = 'compact', label = 'Add' }) 
 
   return (
     <div
-      className={`inline-flex items-center justify-between gap-1 rounded-full bg-ember-500 text-cream-50 ${
+      className={`inline-flex items-center justify-between gap-1 rounded-full bg-terracotta-500 text-cream-50 ${
         full ? 'w-full px-3 py-2' : 'px-1.5 py-1.5'
       }`}
     >
@@ -44,7 +44,7 @@ export default function AddToCart({ item, variant = 'compact', label = 'Add' }) 
         type="button"
         onClick={() => setQty(key, qty - 1)}
         aria-label={qty === 1 ? `Remove ${item.name} from order` : `One less ${item.name}`}
-        className="flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none transition-colors hover:bg-bark-950/15"
+        className="flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none transition-colors hover:bg-petrol-950/15"
       >
         −
       </button>
@@ -58,7 +58,7 @@ export default function AddToCart({ item, variant = 'compact', label = 'Add' }) 
         type="button"
         onClick={() => setQty(key, qty + 1)}
         aria-label={`One more ${item.name}`}
-        className="flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none transition-colors hover:bg-bark-950/15"
+        className="flex h-7 w-7 items-center justify-center rounded-full text-lg leading-none transition-colors hover:bg-petrol-950/15"
       >
         +
       </button>

@@ -23,16 +23,16 @@ const TONES = {
   // On the dark room-lit pages.
   dark: {
     name: 'text-cream-50',
-    sub: 'text-ember-300',
-    flank: 'via-ember-300/55',
-    trail: 'from-ember-300/55',
+    sub: 'text-saffron-300',
+    flank: 'via-saffron-300/55',
+    trail: 'from-saffron-300/55',
   },
   // On the cream paper of the printed card.
   print: {
-    name: 'text-bark-900',
-    sub: 'text-ember-600',
-    flank: 'via-ember-500/60',
-    trail: 'from-ember-500/60',
+    name: 'text-petrol-900',
+    sub: 'text-saffron-600',
+    flank: 'via-saffron-500/60',
+    trail: 'from-saffron-500/60',
   },
 };
 

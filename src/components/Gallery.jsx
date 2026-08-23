@@ -68,8 +68,8 @@ export default function Gallery() {
                 sizes="(max-width: 1024px) 50vw, 25vw"
                 className="object-cover transition-transform duration-[1.1s] ease-out group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-bark-950/25 transition-colors duration-500 group-hover:bg-bark-950/0" />
-              <div className="absolute inset-x-0 bottom-0 translate-y-3 bg-gradient-to-t from-bark-950/90 to-transparent p-4 text-left opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+              <div className="absolute inset-0 bg-petrol-950/25 transition-colors duration-500 group-hover:bg-petrol-950/0" />
+              <div className="absolute inset-x-0 bottom-0 translate-y-3 bg-gradient-to-t from-petrol-950/90 to-transparent p-4 text-left opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                 <span className="text-xs uppercase tracking-widest text-cream-200">{shot.alt}</span>
               </div>
             </button>
@@ -83,14 +83,14 @@ export default function Gallery() {
           role="dialog"
           aria-modal="true"
           aria-label={current.alt}
-          className="fixed inset-0 z-[60] flex items-center justify-center bg-bark-950/95 p-4 backdrop-blur-md sm:p-8"
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-petrol-950/95 p-4 backdrop-blur-md sm:p-8"
           onClick={close}
         >
           <button
             type="button"
             onClick={close}
             aria-label="Close"
-            className="absolute right-5 top-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-2xl leading-none text-cream-100 transition-colors hover:border-ember-400 hover:text-ember-300"
+            className="absolute right-5 top-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-2xl leading-none text-cream-100 transition-colors hover:border-saffron-400 hover:text-saffron-300"
           >
             ×
           </button>
@@ -102,7 +102,7 @@ export default function Gallery() {
               step(-1);
             }}
             aria-label="Previous image"
-            className="absolute left-3 flex h-12 w-12 items-center justify-center rounded-full border border-white/15 text-cream-100 transition-colors hover:border-ember-400 hover:text-ember-300 sm:left-8"
+            className="absolute left-3 flex h-12 w-12 items-center justify-center rounded-full border border-white/15 text-cream-100 transition-colors hover:border-saffron-400 hover:text-saffron-300 sm:left-8"
           >
             ‹
           </button>
@@ -132,7 +132,7 @@ export default function Gallery() {
               step(1);
             }}
             aria-label="Next image"
-            className="absolute right-3 flex h-12 w-12 items-center justify-center rounded-full border border-white/15 text-cream-100 transition-colors hover:border-ember-400 hover:text-ember-300 sm:right-8"
+            className="absolute right-3 flex h-12 w-12 items-center justify-center rounded-full border border-white/15 text-cream-100 transition-colors hover:border-saffron-400 hover:text-saffron-300 sm:right-8"
           >
             ›
           </button>

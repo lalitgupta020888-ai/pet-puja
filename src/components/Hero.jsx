@@ -15,8 +15,8 @@ export default function Hero() {
           sizes="100vw"
           className="animate-ken-burns object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-bark-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(192,88,0,0.20),transparent_62%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-petrol-950" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(248,183,57,0.20),transparent_62%)]" />
       </div>
 
       {/* Slow-turning rangoli rings behind the wordmark. */}
@@ -33,14 +33,14 @@ export default function Hero() {
             <OpenStatus />
           </div>
 
-          <p className="devanagari mt-9 text-3xl text-ember-300/90 sm:text-4xl">
+          <p className="devanagari mt-9 text-3xl text-saffron-300/90 sm:text-4xl">
             {site.nameDevanagari}
           </p>
 
           <h1 className="mt-4 font-display text-[3.25rem] font-light leading-[0.95] tracking-tight text-cream-50 sm:text-7xl lg:text-[5.5rem]">
             Every meal,
             <br />
-            a small <span className="italic text-ember-300">ceremony</span>.
+            a small <span className="italic text-terracotta-300">ceremony</span>.
           </h1>
 
           <p className="mt-9 max-w-xl text-lg leading-relaxed text-cream-300/85">
@@ -59,8 +59,8 @@ export default function Hero() {
 
         <div className="mt-20 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.05] lg:grid-cols-4">
           {accolades.map((a) => (
-            <div key={a.label} className="bg-bark-950/60 px-6 py-7 backdrop-blur-sm">
-              <div className="font-display text-4xl font-light text-ember-300">{a.value}</div>
+            <div key={a.label} className="bg-petrol-950/60 px-6 py-7 backdrop-blur-sm">
+              <div className="font-display text-4xl font-light text-saffron-300">{a.value}</div>
               <div className="mt-2 text-[0.68rem] uppercase tracking-widest text-cream-400">
                 {a.label}
               </div>
@@ -70,7 +70,7 @@ export default function Hero() {
       </div>
 
       <div className="pointer-events-none absolute bottom-8 left-1/2 hidden -translate-x-1/2 lg:block">
-        <div className="h-14 w-px animate-shimmer bg-gradient-to-b from-transparent via-ember-400/60 to-transparent" />
+        <div className="h-14 w-px animate-shimmer bg-gradient-to-b from-transparent via-saffron-400/60 to-transparent" />
       </div>
     </section>
   );

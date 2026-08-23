@@ -4,49 +4,55 @@ const config = {
   theme: {
     extend: {
       colors: {
-        // Roasted browns — the tandoor wall after a long service. The ground
-        // everything sits on. 800 is the palette's #38240D.
-        bark: {
-          950: '#1A1006',
-          900: '#241608',
-          800: '#38240D',
-          700: '#4A3113',
-          600: '#5D3E19',
-          500: '#714C20',
+        // Petrol — deep teal, the ground everything sits on. 800 is the
+        // reference panel colour; 950 is the darker frame behind it.
+        petrol: {
+          950: '#072935',
+          900: '#0B3444',
+          800: '#0E3D4F',
+          700: '#145066',
+          600: '#1B6480',
+          500: '#237E9E',
         },
-        // Ember — burnt orange, the colour of coals. 500 is the palette's
-        // #C05800 and 600 its #713600; the lighter steps are tints of the same
-        // hue, because #C05800 as small type on a dark ground does not carry
-        // enough contrast to read.
-        ember: {
-          100: '#FFEFD6',
-          200: '#FBD5A4',
-          300: '#F0A857',
-          400: '#E08A2E',
-          500: '#C05800',
-          600: '#713600',
+        // Saffron — the warm yellow that carries every rule, eyebrow and price.
+        // 400 is the reference yellow; the rest are its tints and shades.
+        saffron: {
+          100: '#FEF3D8',
+          200: '#FCE3A6',
+          300: '#FACB6A',
+          400: '#F8B739',
+          500: '#E09C1F',
+          600: '#B27714',
         },
-        // Vermilion — heat pips and form errors. Kept pink-red so it never gets
-        // mistaken for the burnt-orange accent.
+        // Terracotta — the second accent: filled call-to-action buttons and the
+        // italic display words. 500 is the reference terracotta.
+        terracotta: {
+          200: '#F0B99E',
+          300: '#E08A63',
+          400: '#D06A40',
+          500: '#C1552F',
+          600: '#9A4123',
+        },
+        // Vermilion — heat pips and form errors. Kept pink-red so it reads as a
+        // warning rather than as the terracotta accent.
         vermilion: {
           300: '#FF9A8A',
           400: '#F4674F',
           500: '#D6452C',
           600: '#A93318',
         },
-        // Pista — the veg mark and pistachio garnish. The one cool note.
+        // Pista — the veg mark and pistachio garnish.
         pista: {
           400: '#A8D65C',
           500: '#86B93F',
         },
-        // Cream — the palette's #FDFBD4, a pale butter. Display type on the dark
-        // ground, and the stock the printed card is laid on.
+        // Cream — warm off-whites for type on the dark ground and printed paper.
         cream: {
-          50: '#FDFBD4',
-          100: '#F7F3C6',
-          200: '#E6E1B0',
-          300: '#CFC6A4',
-          400: '#9B9070',
+          50: '#FFF8E8',
+          100: '#FAEFDA',
+          200: '#EADCC4',
+          300: '#D9CBAA',
+          400: '#A2957A',
         },
       },
       fontFamily: {
@@ -65,7 +71,7 @@ const config = {
           "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E\")",
         // Faint concentric rings — a rangoli/thali echo behind key sections.
         rings:
-          "radial-gradient(circle at 50% 50%, transparent 0 28%, rgba(192,88,0,0.07) 28% 28.4%, transparent 28.4% 44%, rgba(192,88,0,0.05) 44% 44.3%, transparent 44.3%)",
+          "radial-gradient(circle at 50% 50%, transparent 0 28%, rgba(248,183,57,0.07) 28% 28.4%, transparent 28.4% 44%, rgba(248,183,57,0.05) 44% 44.3%, transparent 44.3%)",
       },
       animation: {
         'ken-burns': 'kenBurns 26s ease-in-out infinite alternate',

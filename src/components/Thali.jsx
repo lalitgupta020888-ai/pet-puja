@@ -15,7 +15,7 @@ export default function Thali() {
   return (
     <section
       id="thali"
-      className="relative scroll-mt-24 border-y border-white/[0.06] bg-bark-900/40 py-28 lg:py-40"
+      className="relative scroll-mt-24 border-y border-white/[0.06] bg-petrol-900/40 py-28 lg:py-40"
     >
       <div className="shell">
         <SectionHeading
@@ -39,13 +39,13 @@ export default function Thali() {
                 aria-pressed={on}
                 className={`flex items-center gap-3 rounded-full border px-6 py-3 transition-all duration-300 ${
                   on
-                    ? 'border-ember-500 bg-ember-500 text-cream-50'
-                    : 'border-white/10 text-cream-300 hover:border-ember-400/50 hover:text-ember-200'
+                    ? 'border-terracotta-500 bg-terracotta-500 text-cream-50'
+                    : 'border-white/10 text-cream-300 hover:border-saffron-400/50 hover:text-saffron-200'
                 }`}
               >
                 <span className="text-[0.7rem] uppercase tracking-widest">{t.name}</span>
                 <span
-                  className={`devanagari text-xs ${on ? 'text-bark-900/70' : 'text-ember-400/70'}`}
+                  className={`devanagari text-xs ${on ? 'text-petrol-900/70' : 'text-saffron-400/70'}`}
                 >
                   {t.hi}
                 </span>
@@ -57,7 +57,7 @@ export default function Thali() {
         <div className="mt-16 grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           {/* The plate */}
           <div className="reveal relative mx-auto w-full max-w-md">
-            <div className="relative aspect-square overflow-hidden rounded-full border border-ember-400/25 shadow-[0_40px_120px_-40px_rgba(192,88,0,0.5)]">
+            <div className="relative aspect-square overflow-hidden rounded-full border border-saffron-400/25 shadow-[0_40px_120px_-40px_rgba(248,183,57,0.5)]">
               <Image
                 key={thali.photo}
                 src={img(thali.photo, { w: 900, h: 900 })}
@@ -66,7 +66,7 @@ export default function Thali() {
                 sizes="(max-width: 1024px) 90vw, 40vw"
                 className="object-cover"
               />
-              <div className="absolute inset-0 rounded-full bg-gradient-to-t from-bark-950/70 via-transparent to-transparent" />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-t from-petrol-950/70 via-transparent to-transparent" />
             </div>
 
             {/* Steam */}
@@ -80,8 +80,8 @@ export default function Thali() {
               ))}
             </div>
 
-            <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 rounded-full border border-ember-400/30 bg-bark-950/90 px-7 py-3 backdrop-blur">
-              <span className="font-display text-3xl text-ember-300">₹{thali.price}</span>
+            <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 rounded-full border border-saffron-400/30 bg-petrol-950/90 px-7 py-3 backdrop-blur">
+              <span className="font-display text-3xl text-saffron-300">₹{thali.price}</span>
             </div>
           </div>
 
@@ -106,7 +106,7 @@ export default function Thali() {
               {thali.items.map((item) => (
                 <li
                   key={item.id}
-                  className="flex items-baseline gap-3 bg-bark-950/60 px-5 py-4"
+                  className="flex items-baseline gap-3 bg-petrol-950/60 px-5 py-4"
                 >
                   <span
                     className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${
@@ -128,7 +128,7 @@ export default function Thali() {
                 À la carte{' '}
                 <span className="text-cream-300/70 line-through">₹{thali.fullPrice}</span>
               </span>
-              <span className="text-ember-300">You save ₹{saving} on the set</span>
+              <span className="text-saffron-300">You save ₹{saving} on the set</span>
             </div>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">

@@ -19,7 +19,7 @@ export default function Menu() {
   return (
     <section id="menu" className="relative scroll-mt-24 py-28 lg:py-40">
       {/* Warm wash behind the menu so it reads as its own room. */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(192,88,0,0.10),transparent_55%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(248,183,57,0.10),transparent_55%)]" />
 
       <div className="shell relative">
         <SectionHeading
@@ -43,8 +43,8 @@ export default function Menu() {
                 aria-pressed={on}
                 className={`group rounded-full border px-5 py-3 text-[0.7rem] uppercase tracking-widest transition-all duration-300 ${
                   on
-                    ? 'border-ember-500 bg-ember-500 text-cream-50'
-                    : 'border-white/10 text-cream-300 hover:border-ember-400/50 hover:text-ember-200'
+                    ? 'border-terracotta-500 bg-terracotta-500 text-cream-50'
+                    : 'border-white/10 text-cream-300 hover:border-saffron-400/50 hover:text-saffron-200'
                 }`}
               >
                 {cat.name}
@@ -85,7 +85,7 @@ export default function Menu() {
                     className="min-w-6 flex-1 translate-y-[-0.15rem] border-b border-dotted border-cream-400/25"
                   />
 
-                  <span className="shrink-0 font-display text-xl text-ember-300">
+                  <span className="shrink-0 font-display text-xl text-saffron-300">
                     ₹{item.price}
                   </span>
                 </div>

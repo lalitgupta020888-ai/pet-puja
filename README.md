@@ -42,9 +42,9 @@ opening hours and contact details are plain data — no component edits required
 
 | | |
 |---|---|
-| **Ground** | `bark` — roasted browns, the tandoor wall after a long service. |
-| **Primary** | `ember` — burnt orange, the colour of coals. |
-| **Accent** | `vermilion` for heat and emphasis; `pista` green for veg marks and the open-now chip. |
+| **Ground** | `petrol` — deep teal, cool enough to make warm food photography sing. |
+| **Primary** | `saffron` — the warm yellow on every rule, eyebrow and price. |
+| **Accent** | `terracotta` for filled buttons and the italic display words; `vermilion` for heat and form errors; `pista` green for veg marks and the open-now chip. |
 | **Display** | Fraunces |
 | **Body** | Inter |
 | **Devanagari** | Tiro Devanagari Hindi |
