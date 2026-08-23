@@ -4,7 +4,7 @@ export const site = {
   tagline: 'Every meal, a small ceremony.',
   description:
     'Madhurima Food Park — eating well is the oldest ritual there is. A pure vegetarian kitchen, kept properly: spices ground at dawn, dal left on the coals all night, breads pulled from the clay oven only once you have asked for them — and the dosa batter set to ferment the night before.',
-  url: 'https://madhurimafoodpark.com',
+  url: 'https://madhurimafoodpark.vercel.app',
   phone: '+91 86503 68283',
   phoneHref: 'tel:+918650368283',
   whatsappHref: 'https://wa.me/918650368283',
