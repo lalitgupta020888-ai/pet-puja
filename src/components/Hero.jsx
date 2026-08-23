@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="shell relative flex min-h-[100svh] flex-col justify-center pb-16 pt-36">
         <div className="max-w-3xl">
           <div className="flex flex-wrap items-center gap-4">
-            <p className="eyebrow">Since {site.established} · Pure Veg · North Indian</p>
+            <p className="eyebrow">Since {site.established} · Pure Veg · North &amp; South Indian</p>
             <OpenStatus />
           </div>
 

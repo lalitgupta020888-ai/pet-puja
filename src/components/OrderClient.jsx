@@ -216,7 +216,7 @@ export default function OrderClient() {
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search dishes — paneer, biryani, naan…"
+              placeholder="Search dishes — paneer, dosa, biryani, naan…"
               aria-label="Search the menu"
               className="w-full rounded-full border border-white/10 bg-petrol-900/70 py-3.5 pl-10 pr-4 text-cream-100 placeholder:text-cream-400/50 transition-colors focus:border-saffron-400 focus:outline-none"
             />

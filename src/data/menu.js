@@ -10,6 +10,7 @@ export const categories = [
   { id: 'all', name: 'Everything', note: 'The full table' },
   { id: 'starters', name: 'To Begin', note: 'From the tandoor' },
   { id: 'main', name: 'Main Course', note: 'Slow-cooked curries' },
+  { id: 'south', name: 'South Indian', note: 'Off the tawa, all day' },
   { id: 'breads', name: 'Breads & Rice', note: 'Clay oven, fresh' },
   { id: 'desserts', name: 'Sweets', note: 'Made each morning' },
   { id: 'beverages', name: 'Drinks', note: 'Cooling & spiced' },
@@ -178,6 +179,74 @@ export const menuItems = [
     signature: true,
     photo: 'photo-1683533698664-12ee473e8c9d',
   },
+  {
+    id: 19,
+    name: 'Masala Dosa',
+    description:
+      'Rice and urad batter left to ferment overnight, spread thin on the tawa and folded over spiced potato. Sambar and three chutneys.',
+    price: 160,
+    category: 'south',
+    veg: true,
+    heat: 1,
+    signature: true,
+    photo: 'photo-1668236543090-82eba5ee5976',
+  },
+  {
+    id: 20,
+    name: 'Ghee Roast Dosa',
+    description:
+      'The same batter, no filling, roasted in ghee until it crackles when you break it. The chutneys and nothing else.',
+    price: 140,
+    category: 'south',
+    veg: true,
+    heat: 0,
+    photo: 'photo-1694849789325-914b71ab4075',
+  },
+  {
+    id: 21,
+    name: 'Idli Sambar',
+    description:
+      'Steamed to order from the same batter, soft enough to take up whatever you dip it in. Sambar and coconut chutney.',
+    price: 110,
+    category: 'south',
+    veg: true,
+    heat: 1,
+    photo: 'photo-1741376509187-0b683c764294',
+  },
+  {
+    id: 22,
+    name: 'Medu Vada',
+    description:
+      'Urad batter beaten by hand until it floats, shaped wet and fried to a shell. Crisp outside, feathery in.',
+    price: 110,
+    category: 'south',
+    veg: true,
+    heat: 1,
+    signature: true,
+    photo: 'photo-1730191843435-073792ba22bc',
+  },
+  {
+    id: 23,
+    name: 'Sambar Vada',
+    description:
+      'The same vada, left to sit in hot sambar until it gives. Order it if you want the sambar more than the crunch.',
+    price: 130,
+    category: 'south',
+    veg: true,
+    heat: 1,
+    photo: 'photo-1736239092819-da2e9b4b5c6b',
+  },
+  {
+    id: 24,
+    name: 'Filter Coffee',
+    description:
+      'Chicory-cut decoction dripped overnight, pulled with hot milk between tumbler and davara until it foams.',
+    price: 50,
+    category: 'beverages',
+    veg: true,
+    heat: 0,
+    photo: 'photo-1758387941825-a6ecaec9c14d',
+  },
 ];
 
 /** The four dishes given the large editorial treatment, in display order. */
@@ -231,6 +300,15 @@ export const thalis = [
     veg: true,
     itemIds: [1, 5, 6, 11, 14],
     photo: 'photo-1631452180519-c014fe946bc7',
+  }),
+  buildThali({
+    id: 'south',
+    name: 'South Indian Thali',
+    hi: 'दक्षिण भारतीय थाली',
+    note: 'Dosa, idli and vada on one plate, with the coffee to finish.',
+    veg: true,
+    itemIds: [19, 21, 22, 24],
+    photo: 'photo-1668236543090-82eba5ee5976',
   }),
   buildThali({
     id: 'feast',
