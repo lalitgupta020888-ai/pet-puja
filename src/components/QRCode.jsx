@@ -16,7 +16,7 @@ export default function QRCode({
   accent = '#B4741F',
   background = '#FDFAF4',
   logo = true,
-  logoText = 'पेट',
+  logoText = 'मधु',
   logoBackground = '#FDFAF4',
   title,
   className = '',

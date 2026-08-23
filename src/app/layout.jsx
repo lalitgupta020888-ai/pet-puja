@@ -30,12 +30,14 @@ export const metadata = {
   description: site.description,
   keywords: [
     'Madhurima Food Park',
+    'pure veg restaurant',
+    'vegetarian restaurant',
     'North Indian restaurant',
     'thali',
-    'butter chicken',
+    'paneer butter masala',
     'dal makhani',
     'tandoor',
-    'biryani',
+    'veg biryani',
   ],
   openGraph: {
     type: 'website',
@@ -67,7 +69,7 @@ const jsonLd = {
   url: site.url,
   telephone: site.phone,
   email: site.email,
-  servesCuisine: ['North Indian', 'Indian'],
+  servesCuisine: ['North Indian', 'Indian', 'Vegetarian'],
   priceRange: '₹₹',
   address: {
     '@type': 'PostalAddress',

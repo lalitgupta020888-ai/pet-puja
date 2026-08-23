@@ -4,7 +4,7 @@ export const testimonials = [
     name: 'Rajesh Kumar',
     role: 'Guest since 2009',
     rating: 5,
-    text: 'The butter chicken is absolutely amazing. I have been coming here for years and the quality has never once slipped — not on a quiet Tuesday, not on a full Saturday.',
+    text: 'The paneer butter masala is absolutely amazing. I have been coming here for years and the quality has never once slipped — not on a quiet Tuesday, not on a full Saturday.',
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const testimonials = [
     name: 'Amit Patel',
     role: 'Neighbour',
     rating: 5,
-    text: 'Great food, honest prices, and a thali that defeats me every single time. The biryani here is the best I have ever tasted.',
+    text: 'Great food, honest prices, and a thali that defeats me every single time. The veg biryani here is the best I have ever tasted.',
   },
   {
     id: 4,
@@ -77,9 +77,9 @@ export const gallery = [
   { photo: 'photo-1582228096960-7f5d2ec4aa8e', alt: 'The dining room, mid-service', span: 'tall' },
   { photo: 'photo-1509358271058-acd22cc93898', alt: 'Ground spices measured by the spoon' },
   { photo: 'photo-1697155406014-04dc649b0953', alt: 'Naan lifted from the tandoor' },
-  { photo: 'photo-1589302168068-964664d93dc0', alt: 'Biryani opened at the table', span: 'wide' },
+  { photo: 'photo-1563379091339-03b21ab4a4f8', alt: 'Veg biryani opened at the table', span: 'wide' },
   { photo: 'photo-1627366422957-3efa9c6df0fc', alt: 'Dal finished with a tempering of whole spice' },
-  { photo: 'photo-1603894584373-5ac82b2ae398', alt: 'Butter chicken swirled with cream' },
+  { photo: 'photo-1631452180519-c014fe946bc7', alt: 'Paneer butter masala swirled with cream' },
   { photo: 'photo-1565461133566-e35e9e120d5f', alt: 'The pass, between orders', span: 'tall' },
   { photo: 'photo-1683533698664-12ee473e8c9d', alt: 'Chai poured to order' },
 ];
@@ -91,6 +91,7 @@ export const marqueeWords = [
   'Straight from the clay oven',
   'Open every day',
   'Since 1978',
+  'शुद्ध शाकाहारी',
   'भूख का सम्मान',
   'No shortcuts',
 ];

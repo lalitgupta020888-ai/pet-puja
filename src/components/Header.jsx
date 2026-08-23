@@ -45,7 +45,7 @@ export default function Header() {
           {/* Wordmark: Devanagari sits above the latin, as on a shopfront board. */}
           <a href="#top" className="group flex items-center gap-3.5">
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-marigold-400/40 text-marigold-300 transition-colors duration-500 group-hover:border-marigold-300 group-hover:bg-marigold-400/10">
-              <span className="devanagari text-lg">पे</span>
+              <span className="devanagari text-lg">म</span>
             </span>
             <span className="flex flex-col leading-none">
               <span className="devanagari text-[0.68rem] text-marigold-400/85">

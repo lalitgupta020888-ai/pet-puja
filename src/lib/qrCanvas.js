@@ -124,7 +124,7 @@ function drawQR(ctx, value, x, y, box) {
   ctx.font = `${holeR * unit * 1.02}px ${fonts.hindi}`;
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillText('पेट', cx, cy + unit * 0.1);
+  ctx.fillText('मधु', cx, cy + unit * 0.1);
 }
 
 /**

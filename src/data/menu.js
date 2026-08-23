@@ -1,5 +1,6 @@
 /**
- * Menu source of truth. Prices are in INR.
+ * Menu source of truth. Prices are in INR. The kitchen is pure vegetarian —
+ * every item here must have `veg: true`.
  *
  * `photo` holds the bare Unsplash photo path; `img()` in lib/images.js turns it
  * into a sized, cropped URL so every card requests exactly what it renders.
@@ -28,18 +29,6 @@ export const menuItems = [
     photo: 'photo-1666001120694-3ebe8fd207be',
   },
   {
-    id: 2,
-    name: 'Chicken Tikka',
-    description:
-      'Thigh meat rested overnight in ginger, garlic and red chilli, finished with a smoke of ghee.',
-    price: 280,
-    category: 'starters',
-    veg: false,
-    heat: 2,
-    signature: true,
-    photo: 'photo-1599487488170-d11ec9c172f0',
-  },
-  {
     id: 3,
     name: 'Samosa',
     description:
@@ -49,18 +38,6 @@ export const menuItems = [
     veg: true,
     heat: 1,
     photo: 'photo-1601050690597-df0568f70950',
-  },
-  {
-    id: 4,
-    name: 'Butter Chicken',
-    description:
-      'Tandoor-roasted chicken folded into a tomato gravy finished with white butter and a whisper of fenugreek.',
-    price: 320,
-    category: 'main',
-    veg: false,
-    heat: 1,
-    signature: true,
-    photo: 'photo-1603894584373-5ac82b2ae398',
   },
   {
     id: 5,
@@ -83,19 +60,8 @@ export const menuItems = [
     category: 'main',
     veg: true,
     heat: 1,
-    photo: 'photo-1631452180519-c014fe946bc7',
-  },
-  {
-    id: 7,
-    name: 'Chicken Biryani',
-    description:
-      'Aged basmati and marinated chicken sealed under dough and cooked on dum until the steam does the work.',
-    price: 350,
-    category: 'main',
-    veg: false,
-    heat: 2,
     signature: true,
-    photo: 'photo-1589302168068-964664d93dc0',
+    photo: 'photo-1631452180519-c014fe946bc7',
   },
   {
     id: 8,
@@ -106,6 +72,7 @@ export const menuItems = [
     category: 'main',
     veg: true,
     heat: 1,
+    signature: true,
     photo: 'photo-1563379091339-03b21ab4a4f8',
   },
   {
@@ -214,7 +181,7 @@ export const menuItems = [
 ];
 
 /** The four dishes given the large editorial treatment, in display order. */
-const FEATURED_IDS = [4, 5, 7, 2];
+const FEATURED_IDS = [5, 1, 6, 8];
 
 export const signatures = FEATURED_IDS.map((id) => menuItems.find((item) => item.id === id));
 
@@ -257,21 +224,21 @@ export const thalis = [
     photo: 'photo-1631452180519-c014fe946bc7',
   }),
   buildThali({
-    id: 'non-veg',
-    name: 'Non-Veg Thali',
-    hi: 'मांसाहारी थाली',
-    note: 'Built around the butter chicken, with a skewer to start.',
-    veg: false,
-    itemIds: [2, 4, 5, 11, 14],
-    photo: 'photo-1603894584373-5ac82b2ae398',
+    id: 'paneer',
+    name: 'Paneer Thali',
+    hi: 'पनीर थाली',
+    note: 'Built around the paneer butter masala, with a skewer to start.',
+    veg: true,
+    itemIds: [1, 5, 6, 11, 14],
+    photo: 'photo-1631452180519-c014fe946bc7',
   }),
   buildThali({
     id: 'feast',
     name: 'The Full Madhurima',
     hi: 'पूरी मधुरिमा थाली',
     note: 'Everything we are known for, on one tray. Bring an appetite and a friend.',
-    veg: false,
-    itemIds: [1, 4, 5, 7, 11, 15, 18],
-    photo: 'photo-1589302168068-964664d93dc0',
+    veg: true,
+    itemIds: [1, 5, 6, 8, 11, 15, 18],
+    photo: 'photo-1563379091339-03b21ab4a4f8',
   }),
 ];

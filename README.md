@@ -28,6 +28,7 @@ src/
   data/
     site.js         name, phone, address, hours, nav — edit business details here
     menu.js         every dish, price, photo, and the thali sets
+                    (the kitchen is pure veg — every item must be veg: true)
     content.js      testimonials, story chapters, the ritual steps, gallery
   lib/
     images.js       builds sized image URLs

@@ -131,7 +131,6 @@ export default function OrderClient() {
   const { table, setTable, count } = useCart();
   const [query, setQuery] = useState('');
   const [course, setCourse] = useState('all');
-  const [vegOnly, setVegOnly] = useState(false);
 
   // The table number rides in on the QR link. Reading it from the URL directly
   // (rather than useSearchParams) keeps this page statically rendered.
@@ -145,12 +144,11 @@ export default function OrderClient() {
   const matches = useMemo(() => {
     const q = normalise(query.trim());
     return menuItems.filter((item) => {
-      if (vegOnly && !item.veg) return false;
       if (course !== 'all' && item.category !== course) return false;
       if (!q) return true;
       return normalise(`${item.name} ${item.description}`).includes(q);
     });
-  }, [query, course, vegOnly]);
+  }, [query, course]);
 
   const grouped = useMemo(
     () =>
@@ -161,7 +159,7 @@ export default function OrderClient() {
   );
 
   const searching = query.trim().length > 0;
-  const showThalis = !searching && !vegOnly && course === 'all';
+  const showThalis = !searching && course === 'all';
 
   return (
     <div className="min-h-screen pb-32">
@@ -170,7 +168,7 @@ export default function OrderClient() {
         <div className="shell flex h-16 items-center justify-between gap-4">
           <a href="/" className="group flex items-center gap-3">
             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-marigold-400/40 text-marigold-300 transition-colors group-hover:bg-marigold-400/10">
-              <span className="devanagari text-sm">पे</span>
+              <span className="devanagari text-sm">म</span>
             </span>
             <span className="flex flex-col leading-none">
               <span className="devanagari text-[0.6rem] text-marigold-400/85">
@@ -251,19 +249,11 @@ export default function OrderClient() {
             })}
           </div>
 
-          <button
-            type="button"
-            onClick={() => setVegOnly((v) => !v)}
-            aria-pressed={vegOnly}
-            className={`flex shrink-0 items-center gap-2 rounded-full border px-4 py-2 text-[0.65rem] uppercase tracking-widest transition-all duration-300 ${
-              vegOnly
-                ? 'border-pista-400 bg-pista-400/15 text-pista-400'
-                : 'border-white/10 text-cream-300 hover:border-pista-400/50'
-            }`}
-          >
+          {/* The kitchen is pure veg, so this states a fact rather than filtering. */}
+          <span className="flex shrink-0 items-center gap-2 rounded-full border border-pista-400/60 bg-pista-400/10 px-4 py-2 text-[0.65rem] uppercase tracking-widest text-pista-400">
             <DietMark veg />
-            Veg
-          </button>
+            Pure veg
+          </span>
         </div>
       </div>
 
@@ -307,7 +297,6 @@ export default function OrderClient() {
               onClick={() => {
                 setQuery('');
                 setCourse('all');
-                setVegOnly(false);
               }}
               className="btn-ghost mt-8"
             >
