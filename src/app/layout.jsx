@@ -29,7 +29,7 @@ export const metadata = {
   },
   description: site.description,
   keywords: [
-    'Pet Puja',
+    'Madhurima Food Park',
     'North Indian restaurant',
     'thali',
     'butter chicken',

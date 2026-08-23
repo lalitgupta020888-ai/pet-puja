@@ -57,7 +57,7 @@ export default function QRCard({ url, table = '', className = '' }) {
             accent="#B4741F"
             background="#FFFFFF"
             logoBackground="#FFFFFF"
-            title={`Scan to open the Pet Puja menu${table ? ` — table ${table}` : ''}`}
+            title={`Scan to open the Madhurima Food Park menu${table ? ` — table ${table}` : ''}`}
             className="block h-auto w-full max-w-[22rem]"
           />
         </div>

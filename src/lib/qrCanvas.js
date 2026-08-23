@@ -283,7 +283,7 @@ export async function downloadCardPNG({ url, table = '', filename }) {
   const href = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = href;
-  a.download = filename ?? `pet-puja-qr${table ? `-table-${table}` : ''}.png`;
+  a.download = filename ?? `madhurima-food-park-qr${table ? `-table-${table}` : ''}.png`;
   document.body.appendChild(a);
   a.click();
   a.remove();

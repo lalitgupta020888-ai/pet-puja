@@ -267,8 +267,8 @@ export const thalis = [
   }),
   buildThali({
     id: 'feast',
-    name: 'The Full Pet Puja',
-    hi: 'पूरी पेट पूजा',
+    name: 'The Full Madhurima',
+    hi: 'पूरी मधुरिमा थाली',
     note: 'Everything we are known for, on one tray. Bring an appetite and a friend.',
     veg: false,
     itemIds: [1, 4, 5, 7, 11, 15, 18],

@@ -1,6 +1,6 @@
-# Pet Puja · पेट पूजा
+# Madhurima Food Park · मधुरिमा फूड पार्क
 
-Marketing site for **Pet Puja**, built with **Next.js 15 (App Router)**, **React 19** and
+Marketing site for **Madhurima Food Park**, built with **Next.js 15 (App Router)**, **React 19** and
 **Tailwind CSS**.
 
 > *Pet puja* — the oldest ritual there is. The whole site is built around that idea:
@@ -113,4 +113,4 @@ there is no booking backend. To store bookings instead, replace the `onSubmit` h
 - Replace the placeholder address, phone, email and social links in the same file.
 - Confirm the thali contents and set pricing with the kitchen.
 - Add `public/favicon.ico` and an OG share image.
-- The repo folder should be named `PET PUJA` to match the project; rename it while no dev server is running.
+- The repo folder should be named `MADHURIMA FOOD PARK` to match the project; rename it while no dev server is running.

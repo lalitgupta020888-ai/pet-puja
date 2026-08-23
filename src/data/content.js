@@ -45,7 +45,7 @@ export const story = [
   {
     year: 'Today',
     hi: 'आज',
-    title: 'Pet Puja, properly done',
+    title: 'Madhurima Food Park, properly done',
     text: 'A new name for the same conviction: eating well is a daily ritual, not an occasion. Eighteen spices still ground at dawn. The dal still takes all night.',
   },
 ];
@@ -85,7 +85,7 @@ export const gallery = [
 ];
 
 export const marqueeWords = [
-  'पेट पूजा',
+  'मधुरिमा फूड पार्क',
   'Ground at dawn',
   'Twelve-hour dal',
   'Straight from the clay oven',

@@ -10,10 +10,10 @@ import {
 } from 'react';
 import { lineKey } from '@/lib/order';
 
-const STORAGE_KEY = 'petpuja.cart.v1';
+const STORAGE_KEY = 'madhurima.cart.v1';
 // Set when the guest arrives through a table QR code, so checkout can default
 // to dine-in and the kitchen ticket says which table to walk the tray to.
-const TABLE_KEY = 'petpuja.table.v1';
+const TABLE_KEY = 'madhurima.table.v1';
 
 const CartContext = createContext(null);
 

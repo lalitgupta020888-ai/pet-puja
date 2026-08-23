@@ -1,14 +1,14 @@
 export const site = {
-  name: 'Pet Puja',
-  nameDevanagari: 'पेट पूजा',
+  name: 'Madhurima Food Park',
+  nameDevanagari: 'मधुरिमा फूड पार्क',
   tagline: 'Every meal, a small ceremony.',
   description:
-    'Pet puja — the oldest ritual there is. We keep it properly: spices ground at dawn, dal left on the coals all night, breads pulled from the clay oven only once you have asked for them.',
-  url: 'https://petpuja.com',
+    'Madhurima Food Park — pet puja, the oldest ritual there is. We keep it properly: spices ground at dawn, dal left on the coals all night, breads pulled from the clay oven only once you have asked for them.',
+  url: 'https://madhurimafoodpark.com',
   phone: '+91 86503 68283',
   phoneHref: 'tel:+918650368283',
   whatsappHref: 'https://wa.me/918650368283',
-  email: 'hello@petpuja.com',
+  email: 'hello@madhurimafoodpark.com',
   address: {
     street: '123 Main Street',
     locality: 'City',
