@@ -31,10 +31,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled || open
-          ? 'border-b border-white/[0.07] bg-petrol-950/85 backdrop-blur-xl'
-          : 'border-b border-transparent bg-transparent'
+      className={`fixed inset-x-0 top-0 z-50 border-b border-terracotta-500/25 bg-saffron-400 transition-all duration-500 ${
+        scrolled || open ? 'shadow-[0_10px_30px_-12px_rgba(7,41,53,0.45)]' : ''
       }`}
     >
       <div className="shell">
@@ -45,14 +43,14 @@ export default function Header() {
         >
           {/* Wordmark: Devanagari sits above the latin, as on a shopfront board. */}
           <a href="#top" className="group flex items-center gap-3.5">
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-saffron-400/40 text-saffron-300 transition-colors duration-500 group-hover:border-saffron-300 group-hover:bg-saffron-400/10">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-petrol-900/35 text-petrol-900 transition-colors duration-500 group-hover:border-petrol-900 group-hover:bg-petrol-900/10">
               <span className="devanagari text-lg">म</span>
             </span>
             <span className="flex flex-col leading-none">
-              <span className="devanagari text-[0.68rem] text-saffron-400/85">
+              <span className="devanagari text-[0.68rem] text-petrol-800/80">
                 {site.nameDevanagari}
               </span>
-              <Wordmark size="md" className="mt-1.5" />
+              <Wordmark size="md" tone="band" className="mt-1.5" />
             </span>
           </a>
 
@@ -63,19 +61,19 @@ export default function Header() {
                 href={link.href}
                 className="group relative flex flex-col items-center gap-0.5"
               >
-                <span className="devanagari text-[0.6rem] text-saffron-400/0 transition-colors duration-300 group-hover:text-saffron-400/80">
+                <span className="devanagari text-[0.6rem] text-terracotta-600/0 transition-colors duration-300 group-hover:text-terracotta-600">
                   {link.hi}
                 </span>
-                <span className="text-[0.72rem] font-medium uppercase tracking-widest text-cream-300 transition-colors group-hover:text-saffron-200">
+                <span className="text-[0.72rem] font-semibold uppercase tracking-widest text-petrol-900 transition-colors group-hover:text-terracotta-600">
                   {link.label}
                 </span>
-                <span className="absolute -bottom-1.5 h-px w-0 bg-saffron-400 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1.5 h-px w-0 bg-terracotta-500 transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </nav>
 
           <div className="hidden items-center gap-4 lg:flex">
-            <OpenStatus />
+            <OpenStatus tone="band" />
             <a href={site.phoneHref} className="btn-primary">
               Book a table
             </a>
@@ -86,7 +84,7 @@ export default function Header() {
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-saffron-400/30 text-cream-100 lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-petrol-900/30 text-petrol-900 lg:hidden"
           >
             <span className="relative block h-3 w-5">
               <span
@@ -105,21 +103,21 @@ export default function Header() {
       </div>
 
       <div
-        className={`overflow-hidden border-t border-white/[0.06] transition-[max-height,opacity] duration-500 lg:hidden ${
+        className={`overflow-hidden border-t border-petrol-900/15 transition-[max-height,opacity] duration-500 lg:hidden ${
           open ? 'max-h-[85vh] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <nav className="shell flex flex-col py-8">
-          <OpenStatus className="mb-6 self-start" />
+          <OpenStatus tone="band" className="mb-6 self-start" />
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="flex items-baseline justify-between border-b border-white/[0.05] py-4 transition-colors hover:text-saffron-200"
+              className="flex items-baseline justify-between border-b border-petrol-900/10 py-4 transition-colors hover:text-terracotta-600"
             >
-              <span className="font-display text-3xl font-light text-cream-100">{link.label}</span>
-              <span className="devanagari text-sm text-saffron-400/70">{link.hi}</span>
+              <span className="font-display text-3xl font-light text-petrol-950">{link.label}</span>
+              <span className="devanagari text-sm text-terracotta-600/80">{link.hi}</span>
             </a>
           ))}
           <a href={site.phoneHref} className="btn-primary mt-8 w-full">

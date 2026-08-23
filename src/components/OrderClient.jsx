@@ -165,27 +165,27 @@ export default function OrderClient() {
   return (
     <div className="min-h-screen pb-32">
       {/* ---------------------------------------------------------- header */}
-      <header className="sticky top-0 z-40 border-b border-white/[0.07] bg-petrol-950/90 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-terracotta-500/25 bg-saffron-400">
         <div className="shell flex h-16 items-center justify-between gap-4">
           <a href="/" className="group flex items-center gap-3">
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-saffron-400/40 text-saffron-300 transition-colors group-hover:bg-saffron-400/10">
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-petrol-900/35 text-petrol-900 transition-colors group-hover:bg-petrol-900/10">
               <span className="devanagari text-sm">म</span>
             </span>
             <span className="flex flex-col leading-none">
-              <span className="devanagari text-[0.6rem] text-saffron-400/85">
+              <span className="devanagari text-[0.6rem] text-petrol-800/80">
                 {site.nameDevanagari}
               </span>
-              <Wordmark size="sm" className="mt-1" />
+              <Wordmark size="sm" tone="band" className="mt-1" />
             </span>
           </a>
 
           <div className="flex items-center gap-3">
             {table && (
-              <span className="inline-flex items-center gap-2 rounded-full border border-saffron-400/40 bg-saffron-400/10 px-3.5 py-1.5 text-[0.6rem] uppercase tracking-widest text-saffron-300">
+              <span className="inline-flex items-center gap-2 rounded-full border border-petrol-900/35 bg-petrol-900/10 px-3.5 py-1.5 text-[0.6rem] uppercase tracking-widest text-petrol-900">
                 Table {table}
               </span>
             )}
-            <OpenStatus className="hidden sm:inline-flex" />
+            <OpenStatus tone="band" className="hidden sm:inline-flex" />
           </div>
         </div>
       </header>

@@ -27,6 +27,13 @@ const TONES = {
     flank: 'via-saffron-300/55',
     trail: 'from-saffron-300/55',
   },
+  // On the saffron nav band.
+  band: {
+    name: 'text-petrol-950',
+    sub: 'text-terracotta-600',
+    flank: 'via-petrol-900/45',
+    trail: 'from-petrol-900/45',
+  },
   // On the cream paper of the printed card.
   print: {
     name: 'text-petrol-900',
